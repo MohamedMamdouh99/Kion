@@ -1,0 +1,168 @@
+<odoo>
+
+    <data>
+
+
+
+        <record id="sea_air_transport_form" model="ir.ui.view">
+            <field name="name">sea air transport form</field>
+            <field name="model">sea.air.transport</field>
+            <field name="arch" type="xml">
+                <form>
+                                        <header>
+                        <button name="action_confirm" id="action_confirm" data-hotkey="v"
+                                string="Confirm" class="btn-primary" type="object" attrs="{'invisible': ['|','|','|',('state', '=', 'confirm'),('state', '=', 'send_email'),('state', '=', 'end_mail'),('state', '=', 'select_offer')]}"/>
+
+                        <button name="send_user_order"  data-hotkey="v"
+                                string="send email" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','confirm')]}" groups="operation.specialist_team_groups"/>
+
+                        <button name="select_offer"  data-hotkey="v"
+                                string="Select Offer" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','send_email')]}" groups="operation.specialist_team_groups"/>
+
+
+                        <button name="end_mail"  data-hotkey="v"
+                                            string="End Mail" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','select_offer')]}" groups="operation.specialist_team_groups"/>
+
+                        <button name="cancel_operation"  data-hotkey="v"
+                                string="cancel" class="btn-primary" type="object" attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}" groups="operation.cancel_end_mail_group"/>
+
+                        <field name="state" widget="statusbar"/>
+
+
+
+
+
+                    </header>
+                    <sheet>
+
+                        <notebook>
+                            <page string="بيانات عامة">
+
+
+
+
+
+                    <group>
+                          <field name="name"/>
+                          <field name="topic1"/>
+                          <field name="topic2"/>
+                          <field name="topic3"/>
+                          <field name="topic4"/>
+                          <field name="topic5"/>
+                          <field name="topic6"/>
+                          <field name="topic7"/>
+                          <field name="topic8"/>
+                          <field name="topic9"/>
+                          <field name="topic10"/>
+                          <field name="topic11"/>
+                          <field name="topic12"/>
+                          <field name="topic13"/>
+                          <field name="topic14"/>
+                          <field name="topic15"/>
+                          <field name="topic16"/>
+                          <field name="topic17"/>
+                          <field name="topic18"/>
+                          <field name="topic19"/>
+                          <field name="topic20"/>
+                          <field name="topic21"/>
+                        </group>
+
+                     </page>
+                            <page string="Send To" groups="operation.specialist_team_groups">
+                                <group>
+
+                                       <field name="insurance_company_id"  widget="many2many_tags" options="{'no_open': False}"/>
+                                      <field name="file"/>
+                                </group>
+                            </page>
+
+                            <page string="choose company" groups="operation.specialist_team_groups" attrs="{'invisible': [('state','!=','select_offer'),('state','!=','end_mail')]}" >
+                                <group>
+
+                                       <field name="insurance_company_id"  widget="many2many_tags" options="{'no_open': False}"/>
+                                      <field name="file2"/>
+                                      <field name="note22"/>
+                               </group>
+                            </page>
+
+
+                    </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+
+
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="sea_air_transport_tree" model="ir.ui.view">
+            <field name="name">sea air transport tree</field>
+            <field name="model">sea.air.transport</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+
+ <record id="air_sea_view_search" model="ir.ui.view">
+        <field name="name">sea.air.transport.search</field>
+        <field name="model">sea.air.transport</field>
+        <field name="arch" type="xml">
+            <search>
+                        <field name="name"/>
+<!--                <separator>-->
+                        <filter name="ennd_mail" string="end_mail" domain="[('state','=','end_mail')]"/>
+<!--                </separator>-->
+<!--                <separator>-->
+<!--                        <filter name="sales_team" string="sales_team" domain="['|',('state','=','cancel'),('state','=','create')]"/>-->
+<!--                </separator>-->
+
+
+
+            </search>
+
+        </field>
+    </record>
+
+
+
+
+
+
+
+<!--########################################################################################-->
+
+
+        <record model="ir.actions.act_window" id="sea_and_air_model_action">
+            <field name="name">sea air transport </field>
+            <field name="res_model">sea.air.transport</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+  <!--        ####################################################################-->
+
+
+
+        <menuitem name="طلب تأمين نقل بحرى و جوى" id="sea_and_air_model" parent="operation.operation_menu_1"
+                  action="sea_and_air_model_action" sequence="3"/>
+
+
+
+    </data>
+
+
+
+</odoo>
+

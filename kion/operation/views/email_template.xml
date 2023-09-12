@@ -1,0 +1,249 @@
+<odoo>
+
+
+    <data>
+
+        <record id="mail_template_bib" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_operation_operation"/>
+            <field name="email_from">{{user.email}}</field>
+            <field name="email_to">{{object.insurance_company_id.email_formatted}}</field>
+            <field name="subject">BiB email</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="html">
+                <div>
+
+                    <h1>
+                        <p>
+                            <t t-out="object.name"/>
+                        </p>
+                    </h1>
+                    <p>This is a sample email template.</p>
+
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>object.name</td>
+                            <td>object.description</td>
+                            <td>object.description</td>
+                        </tr>
+                    </table>
+
+                    <p>Total: object.total_amount</p>
+
+                </div>
+                <t t-out="object.name"/>
+
+                <t t-out="object.description"/>
+
+                <t t-out="user.name"/>
+
+
+            </field>
+
+
+        </record>
+
+
+    </data>
+
+
+    <data>
+
+        <record id="mail_template1_bib" model="mail.template">
+            <field name="name">bib1 Template</field>
+            <field name="model_id" ref="model_cashtransfer_model"/>
+            <field name="email_from">{{user.email}}</field>
+            <field name="email_to">{{object.insurance_company_id.email_formatted}}</field>
+            <field name="subject">bib email</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>العنوان :
+                    <t t-out="object.address"/>
+                </div>
+                <div>التلفون :
+                    <t t-out="object.phone"/>
+                </div>
+                <div>الفاكس :
+                    <t t-out="object.phone2"/>
+                </div>
+                <div>فروع أخري :
+                    <t t-out="object.topic"/>
+                </div>
+                <div>نوع الشركة :
+                    <t t-out="object.topic2"/>
+                </div>
+                <div>- عدد سنوات العمل في نقل الأموال :
+                    <t t-out="object.phone2"/>
+                </div>
+                <div>7 – هل كانت الشركة تعمل تحت أي مسمي آخر ؟ :
+                    <t t-out="object.topic3"/>
+                </div>
+                <div>8 – حجم – نسبة الأموال المستعملة . :
+                    <t t-out="object.topic4"/>
+                </div>
+                <div>9 – نشاط الشركة بالتفصيل . :
+                    <t t-out="object.topic5"/>
+                </div>
+                <div>10 – تاريخ بداية التامين المطلوب . :
+                    <t t-out="object.topic6"/>
+                </div>
+                <div>11 – هل سبق التامين لدي شركات أخرى ؟ ما هي ؟ :
+                    <t t-out="object.topic7"/>
+                </div>
+                <div>12 – هل سبق وان تم إلغاء وثائق تامين صادرة لصالحكم ؟ متي وأين ؟ :
+                    <t t-out="object.topic8"/>
+                </div>
+                <div>13 – هل هناك حوادث وقعت خلال الخمس سنوات السابقة - ؟ نرجوا إيضاحها تفصيليا ؟ :
+                    <t t-out="object.topic9"/>
+                </div>
+                <div>د- اهل لديك تأمين سارى من المسئولية المدنية قبل الغير ؟ :
+                    <t t-out="object.topic10"/>
+                </div>
+
+
+                <t t-out="object.topic"/>
+
+                <t t-out="object.topic2"/>
+                <t t-out="object.topic3"/>
+
+                <t t-out="object.topic4"/>
+
+                <t t-out="object.topic5"/>
+                <t t-out="object.topic6"/>
+
+                <t t-out="object.topic7"/>
+
+                <t t-out="object.topic8"/>
+                <t t-out="object.topic9"/>
+
+                <t t-out="object.topic10"/>
+
+                <t t-out="object.topic11"/>
+
+                <t t-out="object.description"/>
+
+
+            </field>
+
+            <field name="report_template" ref="operation.action_report_cash_transfer_insurance"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.insurance_company_id.lang }}</field>
+
+        </record>
+
+
+        <!--        sea and air transportation-->
+
+
+        <record id="mail_template2_bib" model="mail.template">
+            <field name="name">bib1 Template</field>
+            <field name="model_id" ref="model_sea_air_transport"/>
+            <field name="email_from">{{user.email}}</field>
+            <field name="email_to">{{object.insurance_company_id.email_formatted}}</field>
+            <field name="subject">bib email</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+
+
+            </field>
+
+            <field name="report_template" ref="operation.action_report_sea_and_air"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.insurance_company_id.lang }}</field>
+
+        </record>
+
+
+        <!--        land transportation-->
+
+
+        <record id="mail_template3_bib" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_land_transfer_model"/>
+            <field name="email_from">{{user.email}}</field>
+            <field name="email_to">{{object.insurance_company_id.email_formatted}}</field>
+            <field name="subject">bib email</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+
+
+            </field>
+
+            <field name="report_template" ref="operation.action_report_land_transport"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.insurance_company_id.lang }}</field>
+
+        </record>
+
+
+        <!--        accident insurance-->
+
+
+        <record id="mail_template42_bib" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_accident_insurance"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="email_cc">{{ (object.partner_id.email or '')}}</field>
+            <!--            <field name="subject">طلب تأمين من الحوادث الشخصية</field>-->
+            <field name="auto_delete" eval="True"/>
+            <field name="report_template" ref="operation.action_report_accident_insurance"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    Reference to above subject Kindly provide us with a competitive offer as attached.
+                    <br/>
+                </div>
+                <!--                <div>ألاسم :-->
+                <!--                    <t t-out="object.name"/>-->
+                <!--                </div>-->
+                <div>
+                    <t t-out="object.body_template"/>
+                </div>
+            </field>
+
+
+        </record>
+
+        <record id="mail_template_user" model="mail.template">
+            <field name="name">tTemplate</field>
+            <field name="model_id" ref="model_mail_activity"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject">{{object.summary}}</field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    <t t-out="object.activity_body"/>-->
+                    <br/>
+                </div>
+            </field>
+        </record>
+
+    </data>
+</odoo>

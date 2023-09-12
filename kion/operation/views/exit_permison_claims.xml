@@ -1,0 +1,167 @@
+<odoo>
+
+    <data>
+
+
+        <record id="exit_permission_model_form" model="ir.ui.view">
+            <field name="name">exit.permission.form</field>
+            <field name="model">exit.permission</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_confirm" id="action_confirm" data-hotkey="v"
+                                string="Confirm" class="btn-primary" type="object"
+                                attrs="{'invisible': ['|',('state', '=', 'confirm'),('state', '=', 'send_email')]}"
+
+                        />
+                        <button name="send_user_order" data-hotkey="v"
+                                string="send email" class="oe_highlight" type="object"
+                                attrs="{'invisible': [('state','!=','confirm')]}"
+                        />
+
+
+                        <button name="cancel_operation" data-hotkey="v"
+                                string="cancel" class="btn-primary" type="object"
+                                attrs="{'invisible': [('state','=','create')]}"
+                        />
+
+                        <!--                                            <button name="toggle_active" string="Cancel Policy" type="object" class="oe_stat_button"-->
+                        <!--                                                    icon="fa-archive" groups="operation.cancel_end_mail_group"-->
+                        <!--                                                    attrs="{'invisible': [('state','!=','end_mail')]}">-->
+                        <!--                                                <field name="active" widget="boolean_button"/>-->
+                        <!--                                            </button>-->
+
+                        <!--                                            <button name="increase" data-hotkey="v"-->
+                        <!--                                                    string="Increase" class="btn-primary" type="object"-->
+                        <!--                                                    attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"-->
+                        <!--                                            />-->
+                        <!--                                            <button name="modify" data-hotkey="v"-->
+                        <!--                                                    string="Modify" class="btn-primary" type="object"-->
+                        <!--                                                    attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"-->
+                        <!--                                            />-->
+                        <!--                                            <button name="decrease" data-hotkey="v"-->
+                        <!--                                                    string="Decrease" class="btn-primary" type="object"-->
+                        <!--                                                    attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"-->
+                        <!--                                            />-->
+
+                        <!--                                            <button name="renew" data-hotkey="v"-->
+                        <!--                                                    string="Renew" class="btn-primary" type="object"-->
+                        <!--                                                    attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"-->
+                        <!--                                            />-->
+
+
+                        <field name="state" widget="statusbar"/>
+
+
+                    </header>
+                    <sheet>
+                        <!--                        <widget name="web_ribbon" title="Mail_Ended" bg_color="bg-success"-->
+                        <!--                                attrs="{'invisible': [('state','!=','end_mail')]}"/>-->
+                        <!--                        <field name="state2" widget="statusbar"-->
+                        <!--                               attrs="{'invisible': [('state','!=','end_mail')]}"/>-->
+
+
+                        <notebook>
+                            <page string="اذن خروج">
+
+                                <group>
+
+                                    <field name="center_name"/>
+                                    <field name="number"/>
+                                    <field name="name"/>
+
+                                    <field name="topic2"/>
+                                    <field name="topic3"/>
+                                    <field name="topic4"/>
+                                    <field name="topic5"/>
+                                    <field name="topic6"/>
+                                    <field name="topic7"/>
+                                    <field name="topic8"/>
+                                    <field name="topic9"/>
+                                    <field name="topic10"/>
+                                    </group>
+                                    <group string="تحملات العميل ">
+                                    <field name="topic11"/>
+                                    <field name="topic12"/>
+                                    <field name="topic13"/>
+                                    <field name="topic14"/>
+                                    <field name="topic15"/>
+                                    <field name="topic16"/>
+                                    <field name="topic17"/>
+                                    <field name="topic18"/>
+                                    <field name="topic19"/>
+                                    <field name="topic20"/>
+                                    <field name="topic21"/>
+
+                                </group>
+
+                            </page>
+
+
+                            <page string="ارسال الي ">
+                                <group>
+                                    <field name="choose_partner" widget="many2many_tags"
+                                          />
+                                    <field name="note_sent"/>
+                                    <field name="attachment_files_ids" widget="many2many_binary"/>
+
+                                </group>
+
+                            </page>
+
+
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="exit_permission__model_tree" model="ir.ui.view">
+            <field name="name">exit.permission.tree</field>
+            <field name="model">exit.permission</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <!--########################################################################################-->
+
+
+        <record model="ir.actions.act_window" id="exit_permission_model_action">
+            <field name="name">اذن خروج  </field>
+            <field name="res_model">exit.permission</field>
+            <field name="view_mode">tree,form</field>
+            <!--            <field name="context">{'search_default_normal_process': 1}</field>-->
+
+
+        </record>
+
+
+        <!--        ####################################################################-->
+
+
+
+
+        <menuitem name="اذن خروج" id="exit_permission_root_model_menu"
+                  parent="operation.claims_model_menu"
+                  action="exit_permission_model_action"
+                  sequence="5"/>
+
+
+    </data>
+
+
+</odoo>
+

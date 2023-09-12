@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<data>
+
+
+
+
+    <record id="action_report_accident_insurance" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">accident.insurance</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.report_accident_insurance</field>
+            <field name="report_file">operation.report_accident_insurance</field>
+            <field name="binding_model_id" ref="model_land_transfer_model"/>
+            <field name="binding_type">report</field>
+    </record>
+
+
+      <template id="operation.report_accident_insurance">
+        <t t-call="web.html_container">
+
+
+          <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2 style="text-align: center;">طلب تأمين من الحوادث الشخصية</h2>
+                            <h4 style="text-align: center;">(بمبالــــــغ كبيــــرة)</h4>
+
+                            <p>	اسم طالب التـأمين: <span t-field="o.name"/></p>
+                            <p>صلته بالمؤمن عليه: <span t-field="o.topic1"/></p>
+                            <h2>بيانــــــــات عــــن المؤمـــن عليــــــــه</h2>
+                            <p>الأســـــــــم :<span t-field="o.topic2"/></p>
+                            <p>البطاقـــــــة : رقم:<span t-field="o.topic3"/></p>
+                            <p>بتاريخ:<span t-field="o.topic4"/></p>
+                            <p> مكتب السجل المدني :<span t-field="o.topic5"/></p>
+                            <p> النشاط الذي يزاوله وطبيعة عمله :<span t-field="o.topic6"/></p>
+                            <p>فتـــرة مزاولــة هذا النشـــــــــاط :<span t-field="o.topic7"/></p>
+                            <p>إجمالي الدخل السنوي الذي يحصل عليه:<span t-field="o.topic8"/></p>
+                            <p>(متوسط السنتين الأخيرتين) :<span t-field="o.topic9"/></p>
+                            <p>محــــــل الإقـــــامـــــــــــة  :<span t-field="o.topic10"/></p>
+                            <p> محــــــل العمــــــــــــــــــل <span t-field="o.topic11"/></p>
+                            <strong>بيان بوثائق تأمينات الحياة والحوادث الشخصية السارية الحالية </strong>
+
+                            <p> اســــــــم الشـــركــــــــــة  :<span t-field="o.topic12"/></p>
+                            <p>المـــــــــــــدة : مـــــــــن  :<span t-field="o.topic13"/></p>
+                            <p>الي :<span t-field="o.topic14"/></p>
+                            <p>المستفيــــــــــديــــــــــــن   :<span t-field="o.topic15"/></p>
+                            <p>مبـــــــــــــالغ التـــــأميـن    :<span t-field="o.topic16"/></p>
+                            <strong>بيان بوثائق تأمينات الحيــاة والحـــوادث الشخصيـــة السابقـة :</strong>
+                            <p>- اســــــــم شـــركـة التأمين     :<span t-field="o.topic17"/></p>
+                            <p>مبـــــــــــــالغ التـــــأميـن    :<span t-field="o.topic18"/></p>
+
+                            <p>فـــــــي حالـــــــة الــوفــــــاة    :<span t-field="o.topic19"/></p>
+
+                            <p>في حالة العجز الكلي المستديم    :<span t-field="o.topic20"/></p>
+
+                            <p>مـــــــدة التــــــــأمـــين من:<span t-field="o.topic21"/></p>
+                            <p>الي :<span t-field="o.topic22"/></p>
+
+
+                            <p>إذا كان أحد هذه التأمينات قد ألغيت فيوضح تاريخ   :<span t-field="o.topic23"/></p>
+                            <p>سبب الإلغاء  :<span t-field="o.topic26"/></p>
+
+                            <strong>هل سبق أن أصبت بحادث</strong>
+                            <p>تاريخـــه وظروفــــه  :<span t-field="o.topic24"/></p>
+                            <p>نتــــــائجــــــــــــــــه  :<span t-field="o.topic25"/></p>
+
+                            <strong> أسئلة يجيب عليها المؤمن عليه متعلقة بحالته الصحية والتاريخ المرضي له</strong>
+                            <p>هل تعاني من أي عيب أو تشـــوه خلقـــي ؟  :<span t-field="o.topic27"/></p>
+                            <p>هل تتلقى في الوقت الحالي أي علاج طبي؟  :<span t-field="o.topic28"/></p>
+
+
+
+                            <strong>هل تعاني في الوقت الحالي من الأمراض التالية:</strong>
+
+                            <p>حمى روماتيزمية، ضغط دم عالي اضطرابات في القلب :<span t-field="o.topic29"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم :<span t-field="o.topic30"/></p>
+
+
+                            <p>  ربو، التهاب رئوي، أمراض صدريه :<span t-field="o.topic31"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic32"/></p>
+
+                            <p>- صــرع ، نوبــات غيــــاب للوعـــــي:<span t-field="o.topic33"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic36"/></p>
+
+                           <p>- مــــــــــــــرض الســــــــــــــــــــكر :<span t-field="o.topic35"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic36"/></p>
+
+                           <p>- -روماتيزم أو التهــــاب المفاصـــــل :<span t-field="o.topic37"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic38"/></p>
+
+
+                           <p>- - انزلاق غضروفي أو مشاكل بالظهر :<span t-field="o.topic39"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic40"/></p>
+
+                           <p>- - عـيــــوب فـــي النظـــر أو السمـــع:<span t-field="o.topic41"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic42"/></p>
+
+
+                           <p>-  انهيار عصبي- ضغط نفسي، اكتئاب :<span t-field="o.topic43"/></p>
+                            <p>التفاصيل في حالة الإجابة بنعم<span t-field="o.topic44"/></p>
+
+
+
+                            <p>هل تدخن حالياً أو تتناول المشروبات الكحولية <span t-field="o.topic45"/></p>
+                            <p>-هل سبق أن أصبت بمرض أو عاهة <span t-field="o.topic46"/></p>
+
+                            <strong>في حالـة الإجــــابة بنعــــم أذكــــر:</strong>
+                             <p> -نــوع المــــرض أو العــاهــــة: <span t-field="o.topic47"/></p>
+                            <p> -تـــــــــــاريــــــــخ ذلــــــــــــك : <span t-field="o.topic48"/></p>
+                            <p>- تفاصيل تطور المرض أو العاهة استمرارا أو استقـرارا أو شفـــاءا : <span t-field="o.topic49"/></p>
+                            <strong>  مــــدى التعــــــــرض لمخـــــــــــــــاطــــــر خاصــــــــــــة :</strong>
+                            <p>-هل تستخدم لأداء واجبات عملك آلات ميكانيكية أو يدوية :<span t-field="o.topic50"/></p>
+                            <p>هل تتعرض أو تستخدم تيار كهربائي ذو ضغط عالــــي: <span t-field="o.topic51"/></p>
+                            <p>أو متوسط أو مواد خطرة أو إشعاعات أو مواد ملتهبـــة:<span t-field="o.topic52"/></p>
+                            <p>  أو متفجرات أو أوعية ضغط:<span t-field="o.topic53"/></p>
+                            <p>هل يتضمـــــــــن عمــــلك استعمــــــــال السقــــــــالات :<span t-field="o.topic54"/></p>
+                            <p>هل يتضمن النشاط الذي تعمل به إنشاء الكباري أو المباني<span t-field="o.topic55"/></p>
+                            <p>أو الأقبية أو الأنفاق أو العمل في الإسطبلات أو المناجم :<span t-field="o.topic56"/></p>
+                            <p>المحاجر أو حفر الآبار  :<span t-field="o.topic57"/></p>
+                            <p>هل تمارس قيادة الموتوسيكلات البرية أو البحريــــــــــــة :<span t-field="o.topic58"/></p>
+                            <p>ما هي أنواع الرياضات التي تزاولها – تذكر بالتفصيــــل :<span t-field="o.topic59"/></p>
+                            <strong>مبلـــــــــــغ التـــــــــــأميــن المطلـــــــــــوب : <span t-field="o.topic60"/> </strong>
+
+                             <p>في حالــــــة الوفـــــــــــــــــاة  :<span t-field="o.topic61"/></p>
+                            <p>في حالة العجز الكلي المستديم:<span t-field="o.topic62"/></p>
+                            <p>هل ترغب في تغطية العجز الكلي المؤقت بواقع 5 (في الألف) اسبوعياً من مبلغ التأمين في حالة العجزالمستديم وبحد أقصى لمدة 52 أسبوعاً.:<span t-field="o.topic63"/></p>
+                            <strong>المستفيدون في حالة الوفــــــــــاة </strong>
+                            <strong>اسم كل مستفيد والصلة والعنوان</strong>
+
+                            <p>الاسم بالكامـــــل:<span t-field="o.topic65"/></p>
+                            <p>الصـــــــــــــــلة :<span t-field="o.topic66"/></p>
+                            <p>العنـــــــــــــوان:<span t-field="o.topic67"/></p>
+                            <p>سريان التأميـــن :  المدة:<span t-field="o.topic68"/></p>
+                            <p>من:<span t-field="o.topic69"/></p>
+                            <p>إلى:<span t-field="o.topic70"/></p>
+                            <p>( لا يبدأ سريان التأمين إلا بعد قبوله من جانب الشركة وسداد قسط التأمين).</p>
+
+                            <h2> إقــــــــــــــــــــــرار</h2>
+                            <p>أقر أنا الموقع على هذا أدناه أن جميع البيانات الواردة بعاليه صحيحة ومطابقة للواقع وأنني لم أخفي على شركة التأمين أي أمر من الأمور الجوهرية المتعلقة بالخطر المراد التأمين عليه والتي من شأنها أن تؤثر على قرار الشركة في قبول التأمين من عدمه أو في تحديد الشروط أو الأسعار التي على أساسها يتم التعاقد، كما أعلم أن أي إقرار غير صحي أو غير مستوف يصبح معه العقد باطلاً ، كما أقبل أن يكون طلب التأمين وهذا الإقرار المذيل بالطلب أساسً في التعاقد وجزءاً متمماً لوثيقة التأمين.</p>
+                            <strong>طـــــالب التـــــأميــــــن</strong>
+                             <p>الاســـــــــــم:<span t-field="o.topic71"/></p>
+                            <p>الوظيفـــــــة:<span t-field="o.topic72"/></p>
+                            <p> رقم البطاقـة:<span t-field="o.topic73"/></p>
+                            <p>العنـــــــوان:<span t-field="o.topic74"/></p>
+                            <p>تحريراً في::<span t-field="o.topic75"/></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--                              <h2>INLAND CARGO PROPOSAL FORM</h2>-->
+<!--                            <p>Insured:<span t-field="o.topic14"/></p>-->
+<!--                            <p> Shipment:<span t-field="o.topic15"/></p>-->
+<!--                            <p> Sum insured:<span t-field="o.topic16"/></p>-->
+<!--                            <p> Max. Value per one shipment:<span t-field="o.topic17"/></p>-->
+<!--                            <p> Voyage from: <span t-field="o.topic18"/></p>-->
+<!--                            <p> Voyage to:<span t-field="o.topic19"/></p>-->
+<!--                            <p>Means of transport:</p>-->
+
+<!--                            <p> Rent trucks  :<span t-field="o.topic75"/></p>-->
+<!--                            <p> Rent owned:<span t-field="o.topic76"/></p>-->
+<!--                            <p> Plate No:<span t-field="o.topic109"/></p>-->
+<!--                            <p> Driver Name:<span t-field="o.topic111"/></p>-->
+<!--                            <p> ID No:<span t-field="o.topic112"/></p>-->
+<!--                            <p> Risks insured:    Road Risk   (and additional Risks):<span t-field="o.topic113"/></p>-->
+<!--                            <p> Notes:<span t-field="o.topic114"/></p>-->
+<!--                            <p> Date:<span t-field="o.topic115"/></p>-->
+<!--                            <p> Insureds Signature:<span t-field="o.topic116"/></p>-->
+
+
+
+
+
+                        </div>
+                    </t>
+                </t>
+        </t>
+      </template>
+
+</data>
+
+
+</odoo>

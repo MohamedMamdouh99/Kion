@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+
+        <record id="equal_model_report_model" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">equal.model</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.equal_model_report_temp_model</field>
+            <field name="report_file">operation.equal_model_report_temp_model</field>
+            <field name="binding_model_id" ref="model_equal_model"/>
+            <field name="binding_type">report</field>
+        </record>
+
+          <template id="equal_model_report_temp_model">
+            <t t-call="web.html_container">
+              <t t-foreach="docs" t-as="o">
+                  <t t-call="web.external_layout">
+                      <div class="page">
+
+                             <h1 style="text-align: center;">نموذج تسوية</h1>
+
+                          <p>	مركز خدمة : <span t-field="o.center_name"/></p>
+                          <p>	رقم العميل : <span t-field="o.number"/></p>
+                          <p>	اسم المالك : <span t-field="o.name"/></p>
+
+
+
+                            <table class="table table-sm table-border table-striped" style="float: left;width:50%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> نوع السيارة :<span t-field="o.topic2"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> موديل السيارة :<span t-field="o.topic3"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> سنة الصنع :<span t-field="o.topic4"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم الشاسيه :<span t-field="o.topic5"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم اللوحة :<span t-field="o.topic6"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> شركة التامين :<span t-field="o.topic7"/></td>
+
+                                            </tr>
+                                            <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> قيمة الفاتورة :<span t-field="o.topic8"/></td>
+
+                                            </tr>
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم الفاتورة :<span t-field="o.topic9"/></td>
+
+                                            </tr>
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> طريقة الدفع :<span t-field="o.topic10"/></td>
+
+                                            </tr>
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;">: </td>
+
+                                            </tr>
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;">:  </td>
+
+                                            </tr>
+
+
+
+
+
+
+
+
+
+
+
+                                 </table>
+
+                          <table class="table table-sm table-border table-striped"
+                                 style="width:50%;border-collapse: collapse;border: 1px solid gray;direction: ltr;float: left;">
+
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">تحملات العميل
+
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اهلاكات الاجزاء المبكانيكية :
+                                      <span t-field="o.topic11"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اهلاكات الاجزاء العادية :
+                                      <span t-field="o.topic12"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اهلاكات مشتملات الزجاج:
+                                      <span t-field="o.topic13"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اهلاك الكاوتش والجنوط :
+                                      <span t-field="o.topic14"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اهلاك الايرباج والبطارية :
+                                      <span t-field="o.topic15"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">شرط الاصلاح بالتوكيل :
+                                      <span t-field="o.topic16"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">تحملات اخري :
+                                      <span t-field="o.topic17"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">قطع غيار غير معتمده :
+                                      <span t-field="o.topic18"/>
+                                  </td>
+
+                              </tr>
+
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اجمالي تحميلات العميل:
+                                      <span t-field="o.topic19"/>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td style="border-left: 1px solid gray;text-align:left;">اجمالي تحميلات  مركز الخدمة:
+                                      <span t-field="o.topic20"/>
+                                  </td>
+
+                              </tr>
+
+
+                          </table>
+                          <p>تم الارسال عن طريق  <span t-field="o.topic21"/></p>
+
+
+                      </div>
+
+                </t>
+                </t>
+
+            </t>
+        </template>
+    </data>
+
+
+</odoo>

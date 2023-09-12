@@ -1,0 +1,1816 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* operation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 15:32+0000\n"
+"PO-Revision-Date: 2023-07-09 15:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic6
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic6
+msgid "   أ – الإصابات الجسمانية بما فى ذلك الوفاة للشخص الواحد   "
+msgstr "أ – الإصابات الجسمانية بما فى ذلك الوفاة للشخص الواحد "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic7
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic7
+msgid "   ب- الإصابات الجسمانية فى الحادث الواحد   "
+msgstr "ب- الإصابات الجسمانية فى الحادث الواحد "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic17
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic17
+msgid "   د- الأضرار المادية والجسمانية معاً وخلال مدة التأمين    "
+msgstr "د- الأضرار المادية والجسمانية معاً وخلال مدة التأمين  "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic16
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic16
+msgid "  ج- الأضرار المادية فى الحادث الواحد  "
+msgstr "ج- الأضرار المادية فى الحادث الواحد"
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic21
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic21
+msgid "  ج- الإصابات الجسمانية خلال مده التأمين  "
+msgstr "ج- الإصابات الجسمانية خلال مده التأمين "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic12
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic12
+msgid "  هل سبق أن ألغت لك أى شركة هذا التأمين وما سبب ذلك   "
+msgstr "هل سبق أن ألغت لك أى شركة هذا التأمين وما سبب ذلك "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic18
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic18
+msgid " - أذكر حدود التعويض المطلوبة لرب العمل  عن  "
+msgstr "أذكر حدود التعويض المطلوبة لرب العمل  عن "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic13
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic13
+msgid " 7- أذكر حدود التعويض المطلوبة لمسئوليه السيارات عن  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic14
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic14
+msgid " أ-الاصابات الجسمانيه بما في ذلك الوفاة للشخص الواحد"
+msgstr "أ-الاصابات الجسمانيه بما في ذلك الوفاة للشخص الواحد"
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic11
+msgid ""
+" بعد التحري والتقصي عن الموظفين لديكم .  هل يوجد أي شخص اشترك في حوادث سطو "
+"علي سيارة مجهزة "
+msgstr "بعد التحري والتقصي عن الموظفين لديكم .  هل يوجد أي شخص اشترك في حوادث سطو "
+
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic6
+msgid " تاريخ بداية التامين المطلوب   "
+msgstr " تاريخ بداية التامين المطلوب  "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic8
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic8
+msgid " ج- الأضرار المادية فى الحادث الواحد   "
+msgstr "ج- الأضرار المادية فى الحادث الواحد"
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic9
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic9
+msgid " د- الأضرار المادية والجسمانية معاً وخلال مدة التأمين   "
+msgstr "د- الأضرار المادية والجسمانية معاً وخلال مدة التأمين"
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic10
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic10
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic10
+msgid " د- اهل لديك تأمين سارى من المسئولية المدنية قبل الغير    "
+msgstr "د- اهل لديك تأمين سارى من المسئولية المدنية قبل الغير"
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__1
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__1
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__1
+msgid " طلب تامين مسؤولية مدنية "
+msgstr "طلب تامين مسؤولية مدنية "
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic38
+msgid ""
+" كم عدد الأشخاص الموجودين في الخدمة أثناء :- ساعات العمل الرسمية المسلحين "
+"وغير المسلحين"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic39
+msgid " كم عدد الأشخاص الموجودين في الخدمة أثناء :-غير ساعات العمل الرسمية  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic36
+msgid " كم مرة يتم تعديل اكواد النظام ونظام فتح الخزائن والغرف المحصنة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic55
+msgid " ما هو عدد السيارات الاحتياطي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic59
+msgid " ما هو نوع الخدمة التي تقدمها  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic3
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic4
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic3
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic4
+msgid ""
+" ما هى الآلات والمعدات والأجهزة التى تستخدم فى أداء هذه الأعمال أو النشاط  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic23
+msgid " ما هي فترة الاختبار التي يستغرقها الموظف لكي يبدا العمل "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic72
+msgid ""
+" مقيم إقامة دائمة وبصورة شرعية بالولايات المتحده الامريكيه ( أى حامل الإقامة"
+" الدائمة Green Card) ."
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic11
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic11
+msgid " هل سبق لك التأمين على المسئولية المدنية من قبل ؟ ولدى أى شركة    "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic3
+msgid " هل كانت الشركة تعمل تحت أي مسمي آخر   "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic14
+msgid " هل يتم الاحتفاظ بصور شخصية – فيش وتشبيه للموظفين "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic21
+msgid " هل يوجد نظام مكتوب لإجراءات العمل "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic4
+msgid " – حجم – نسبة الأموال المستعملة   "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic35
+msgid ""
+" – هل يتم فتح أو غلق الخزائن و الغرف المحصنة إلا بوجود عدد محدد من الأشخاص  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic24
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic24
+msgid ""
+"- أذكر تفاصيل الحوادث التى وقعت للغير بسبب الأعمال أو النشاط الذى تقوم به "
+"خلال الثلاثة سنوات الأخيرة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic
+msgid "- فروع أخرى "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "1 – أسماء المديرين وخبراتهم السابقة :-:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic5
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic5
+msgid "5- أذكر حدود التعويض المطلوبة للغير للمسئوليه المدنيه عن :"
+msgstr ""
+
+#. module: operation
+#: model:mail.template,body_html:operation.mail_template_bib
+msgid ""
+"<div>\n"
+"\n"
+"                    <h1><p><t t-out=\"object.name\"></t></p></h1>\n"
+"                    <p>This is a sample email template.</p>\n"
+"\n"
+"                    <table>\n"
+"                        <tr>\n"
+"                            <th>Product</th>\n"
+"                            <th>Quantity</th>\n"
+"                            <th>Price</th>\n"
+"                        </tr>\n"
+"                        <tr>\n"
+"                                <td>object.name</td>\n"
+"                                <td>object.description</td>\n"
+"                                <td>object.description</td>\n"
+"                        </tr>\n"
+"                    </table>\n"
+"\n"
+"                    <p>Total: object.total_amount</p>\n"
+"\n"
+"                </div>\n"
+"                <t t-out=\"object.name\"></t>\n"
+"\n"
+"                <t t-out=\"object.description\"></t>\n"
+"\n"
+"                <t t-out=\"user.name\"></t>\n"
+"\n"
+"\n"
+"            "
+msgstr ""
+
+#. module: operation
+#: model:mail.template,body_html:operation.mail_template2_bib
+msgid ""
+"<div>\n"
+"                    hello we are bib company and this form about insurance order\n"
+"                </div>\n"
+"                <div>  ألاسم :<t t-out=\"object.name\"></t></div>\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"            "
+msgstr ""
+
+#. module: operation
+#: model:mail.template,body_html:operation.mail_template1_bib
+msgid ""
+"<div>\n"
+"                    hello we are bib company and this form about insurance order\n"
+"                </div>\n"
+"                <div>  ألاسم :<t t-out=\"object.name\"></t></div>\n"
+"                <div> العنوان :<t t-out=\"object.address\"></t></div>\n"
+"                <div>  التلفون :<t t-out=\"object.phone\"></t></div>\n"
+"                <div>  الفاكس :<t t-out=\"object.phone2\"></t></div>\n"
+"                <div>  فروع أخري  :<t t-out=\"object.topic\"></t></div>\n"
+"                <div>  نوع الشركة  :<t t-out=\"object.topic2\"></t></div>\n"
+"                <div>  - عدد سنوات العمل في نقل الأموال  :<t t-out=\"object.phone2\"></t></div>\n"
+"                <div>  7 – هل كانت الشركة تعمل تحت أي مسمي آخر ؟ :<t t-out=\"object.topic3\"></t></div>\n"
+"                <div>  8 – حجم – نسبة الأموال المستعملة . :<t t-out=\"object.topic4\"></t></div>\n"
+"                <div>  9 – نشاط الشركة بالتفصيل . :<t t-out=\"object.topic5\"></t></div>\n"
+"                <div>  10 –  تاريخ بداية التامين المطلوب . :<t t-out=\"object.topic6\"></t></div>\n"
+"                <div>  11 – هل سبق التامين لدي شركات أخرى ؟ ما هي ؟ :<t t-out=\"object.topic7\"></t></div>\n"
+"                <div>  12 – هل سبق وان تم إلغاء وثائق تامين صادرة لصالحكم ؟ متي وأين ؟ :<t t-out=\"object.topic8\"></t></div>\n"
+"                <div>  13 – هل هناك حوادث وقعت خلال الخمس سنوات السابقة - ؟ نرجوا إيضاحها تفصيليا  ؟ :<t t-out=\"object.topic9\"></t></div>\n"
+"                <div>  د- اهل لديك تأمين سارى من المسئولية المدنية قبل الغير      ؟ :<t t-out=\"object.topic10\"></t></div>\n"
+"\n"
+"\n"
+"\n"
+"                <t t-out=\"object.topic\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic2\"></t>\n"
+"                <t t-out=\"object.topic3\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic4\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic5\"></t>\n"
+"                <t t-out=\"object.topic6\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic7\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic8\"></t>\n"
+"                <t t-out=\"object.topic9\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic10\"></t>\n"
+"\n"
+"                <t t-out=\"object.topic11\"></t>\n"
+"\n"
+"                <t t-out=\"object.description\"></t>\n"
+"\n"
+"\n"
+"\n"
+"            "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_needaction
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_needaction
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_needaction
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_ids
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_ids
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_ids
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_exception_decoration
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_exception_decoration
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_exception_decoration
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_state
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_state
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_state
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_type_icon
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_type_icon
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_type_icon
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_attachment_count
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_attachment_count
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_attachment_count
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__cancel
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__cancel
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__cancel
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__cancel
+msgid "Canceled"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.choose_form
+msgid "Choose Forms"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+#: model_terms:ir.ui.view,arch_db:operation.form
+#: model_terms:ir.ui.view,arch_db:operation.sea_air_transport_form
+msgid "Confirm"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__confirm
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__confirm
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__confirm
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__confirm
+msgid "Confirmed"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__create_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__create_uid
+#: model:ir.model.fields,field_description:operation.field_choose_model__create_uid
+#: model:ir.model.fields,field_description:operation.field_operation_operation__create_uid
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__create_uid
+#: model:ir.model.fields,field_description:operation.field_specialist_model__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__create_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__create_date
+#: model:ir.model.fields,field_description:operation.field_choose_model__create_date
+#: model:ir.model.fields,field_description:operation.field_operation_operation__create_date
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__create_date
+#: model:ir.model.fields,field_description:operation.field_specialist_model__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__description
+#: model:ir.model.fields,field_description:operation.field_specialist_model__description
+msgid "Description"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__display_name
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__display_name
+#: model:ir.model.fields,field_description:operation.field_choose_model__display_name
+#: model:ir.model.fields,field_description:operation.field_operation_operation__display_name
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__display_name
+#: model:ir.model.fields,field_description:operation.field_specialist_model__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__end_mail
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__end_mail
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__end_mail
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__end_mail
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+#: model_terms:ir.ui.view,arch_db:operation.form
+#: model_terms:ir.ui.view,arch_db:operation.sea_air_transport_form
+msgid "End Mail"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_follower_ids
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_follower_ids
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_follower_ids
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_partner_ids
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_partner_ids
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_partner_ids
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__activity_type_icon
+#: model:ir.model.fields,help:operation.field_choose_model__activity_type_icon
+#: model:ir.model.fields,help:operation.field_operation_operation__activity_type_icon
+#: model:ir.model.fields,help:operation.field_specialist_model__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__has_message
+#: model:ir.model.fields,field_description:operation.field_choose_model__has_message
+#: model:ir.model.fields,field_description:operation.field_operation_operation__has_message
+#: model:ir.model.fields,field_description:operation.field_specialist_model__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__id
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__id
+#: model:ir.model.fields,field_description:operation.field_choose_model__id
+#: model:ir.model.fields,field_description:operation.field_operation_operation__id
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__id
+msgid "ID"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_exception_icon
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_exception_icon
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_exception_icon
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__activity_exception_icon
+#: model:ir.model.fields,help:operation.field_choose_model__activity_exception_icon
+#: model:ir.model.fields,help:operation.field_operation_operation__activity_exception_icon
+#: model:ir.model.fields,help:operation.field_specialist_model__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__message_needaction
+#: model:ir.model.fields,help:operation.field_choose_model__message_needaction
+#: model:ir.model.fields,help:operation.field_operation_operation__message_needaction
+#: model:ir.model.fields,help:operation.field_specialist_model__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__message_has_error
+#: model:ir.model.fields,help:operation.field_choose_model__message_has_error
+#: model:ir.model.fields,help:operation.field_operation_operation__message_has_error
+#: model:ir.model.fields,help:operation.field_specialist_model__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__email_id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__email_id
+msgid "Insurance company Email"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_is_follower
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_is_follower
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_is_follower
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6____last_update
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line____last_update
+#: model:ir.model.fields,field_description:operation.field_choose_model____last_update
+#: model:ir.model.fields,field_description:operation.field_operation_operation____last_update
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport____last_update
+#: model:ir.model.fields,field_description:operation.field_specialist_model____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__write_uid
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__write_uid
+#: model:ir.model.fields,field_description:operation.field_choose_model__write_uid
+#: model:ir.model.fields,field_description:operation.field_operation_operation__write_uid
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__write_uid
+#: model:ir.model.fields,field_description:operation.field_specialist_model__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__write_date
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__write_date
+#: model:ir.model.fields,field_description:operation.field_choose_model__write_date
+#: model:ir.model.fields,field_description:operation.field_operation_operation__write_date
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__write_date
+#: model:ir.model.fields,field_description:operation.field_specialist_model__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_main_attachment_id
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_main_attachment_id
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_main_attachment_id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_has_error
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_has_error
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_has_error
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_ids
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_ids
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_ids
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__my_activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_choose_model__my_activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_operation_operation__my_activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_specialist_model__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_date_deadline
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_summary
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_summary
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_summary
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_type_id
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_type_id
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_type_id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_needaction_counter
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_needaction_counter
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_needaction_counter
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__message_has_error_counter
+#: model:ir.model.fields,field_description:operation.field_choose_model__message_has_error_counter
+#: model:ir.model.fields,field_description:operation.field_operation_operation__message_has_error_counter
+#: model:ir.model.fields,field_description:operation.field_specialist_model__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__message_needaction_counter
+#: model:ir.model.fields,help:operation.field_choose_model__message_needaction_counter
+#: model:ir.model.fields,help:operation.field_operation_operation__message_needaction_counter
+#: model:ir.model.fields,help:operation.field_specialist_model__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__message_has_error_counter
+#: model:ir.model.fields,help:operation.field_choose_model__message_has_error_counter
+#: model:ir.model.fields,help:operation.field_operation_operation__message_has_error_counter
+#: model:ir.model.fields,help:operation.field_specialist_model__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.choose_model_form_type
+msgid "Open Form"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.policy_menu_action
+#: model:ir.actions.act_window,name:operation.policy_menu_action_cash
+msgid "Policy"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.policy_menu
+msgid "Policy "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__relation_field1
+msgid "Relation Field1"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__relation_field2
+msgid "Relation Field2"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__relation_field3
+msgid "Relation Field3"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__relation_field4
+msgid "Relation Field4"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__relation_field5
+msgid "Relation Field5"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__relation_field6
+msgid "Relation Field6"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_sea_air_transport
+msgid "Report title"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__activity_user_id
+#: model:ir.model.fields,field_description:operation.field_choose_model__activity_user_id
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity_user_id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__select_offer
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__select_offer
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__select_offer
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__select_offer
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+#: model_terms:ir.ui.view,arch_db:operation.form
+#: model_terms:ir.ui.view,arch_db:operation.sea_air_transport_form
+msgid "Select Offer"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__send_email
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__send_email
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__send_email
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__send_email
+msgid "Send Email"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "Send To"
+msgstr ""
+
+#. module: operation
+#: model:ir.module.category,name:operation.specialist_team_category
+#: model:res.groups,name:operation.specialist_team_groups
+msgid "Specialist team"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__activity_state
+#: model:ir.model.fields,help:operation.field_choose_model__activity_state
+#: model:ir.model.fields,help:operation.field_operation_operation__activity_state
+#: model:ir.model.fields,help:operation.field_specialist_model__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_sea_air_transport
+msgid "This object's name is"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,help:operation.field_cashtransfer_model__activity_exception_decoration
+#: model:ir.model.fields,help:operation.field_choose_model__activity_exception_decoration
+#: model:ir.model.fields,help:operation.field_operation_operation__activity_exception_decoration
+#: model:ir.model.fields,help:operation.field_specialist_model__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__value2
+#: model:ir.model.fields,field_description:operation.field_specialist_model__value2
+msgid "Value2"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__description
+msgid "add notes"
+msgstr ""
+
+#. module: operation
+#: model:mail.template,name:operation.mail_template_bib
+msgid "bib Template"
+msgstr ""
+
+#. module: operation
+#: model:mail.template,subject:operation.mail_template1_bib
+#: model:mail.template,subject:operation.mail_template2_bib
+#: model:mail.template,subject:operation.mail_template_bib
+msgid "bib email"
+msgstr ""
+
+#. module: operation
+#: model:mail.template,name:operation.mail_template1_bib
+#: model:mail.template,name:operation.mail_template2_bib
+msgid "bib1 Template"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+#: model_terms:ir.ui.view,arch_db:operation.form
+#: model_terms:ir.ui.view,arch_db:operation.sea_air_transport_form
+msgid "cancel"
+msgstr ""
+
+#. module: operation
+#: model:ir.module.category,name:operation.cancel_end_mail_process
+#: model:res.groups,name:operation.cancel_end_mail_group
+msgid "cancel end mail"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.Cash_transfer_insurance_action
+msgid "cashtransfer model"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line
+msgid "cashtransfer.model.line"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line2
+msgid "cashtransfer.model.line2"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line3
+msgid "cashtransfer.model.line3"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line4
+msgid "cashtransfer.model.line4"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line5
+msgid "cashtransfer.model.line5"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model_line6
+msgid "cashtransfer.model.line6"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.choose_form_action
+msgid "choose form"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_choose_model
+msgid "choose.model"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.form
+msgid "client INFO"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__insurance_company_id
+#: model:ir.model.fields,field_description:operation.field_operation_operation__insurance_company_id
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__insurance_company_id
+#: model:ir.model.fields,field_description:operation.field_specialist_model__insurance_company_id
+msgid "company name"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__value
+#: model:ir.model.fields,field_description:operation.field_specialist_model__value
+msgid "cost"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__state__create
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__state__create
+#: model:ir.model.fields.selection,name:operation.selection__sea_air_transport__state__create
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__state__create
+msgid "create"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.report,name:operation.action_report_cash_transfer_insurance
+#: model:ir.actions.report,name:operation.action_report_sea_air_transport
+msgid "create report"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cash_view_search
+#: model_terms:ir.ui.view,arch_db:operation.specialist_view_search
+msgid "end_mail"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.operation_kanban_view
+msgid "name:"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.specialist_open_sale_orders_menu
+msgid "open sale team orders"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.menu_root
+msgid "operation"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.action_window
+msgid "operation window"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.operation_menu_1
+msgid "sales team "
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.sea_and_air_model_action
+msgid "sea air transport "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "selected company"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+#: model_terms:ir.ui.view,arch_db:operation.form
+#: model_terms:ir.ui.view,arch_db:operation.sea_air_transport_form
+msgid "send email"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.specialist_recieve_emails_menu
+msgid "show received emails"
+msgstr ""
+
+#. module: operation
+#: model:ir.actions.act_window,name:operation.specialist_menu_action
+#: model:ir.ui.menu,name:operation.specialist_team_menu
+msgid "specialist team"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_specialist_model
+msgid "specialist.model"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__state
+#: model:ir.model.fields,field_description:operation.field_operation_operation__state
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__state
+#: model:ir.model.fields,field_description:operation.field_specialist_model__state
+msgid "state"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_choose_model__type_of_insurance
+#: model:ir.model.fields,field_description:operation.field_operation_operation__type_of_insurance
+#: model:ir.model.fields,field_description:operation.field_specialist_model__type_of_insurance
+msgid "type of insurance:"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.operation_kanban_view
+msgid "value:"
+msgstr ""
+
+#. module: operation
+#. odoo-python
+#: code:addons/operation/models/Cash_transfer_insurance.py:0
+#: code:addons/operation/models/Sea_and_air_transport.py:0
+#, python-format
+msgid "you should select email to send mail"
+msgstr ""
+
+#. module: operation
+#: model:mail.template,report_name:operation.mail_template1_bib
+#: model:mail.template,report_name:operation.mail_template2_bib
+msgid "{{ (object.name or '')}}"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic19
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic19
+msgid "أ-الإصابات الجسمانية بما فى ذلك الوفاة للشخص الواحد   "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic28
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic48
+msgid "أخـــــــــــرى "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic2
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic2
+msgid ""
+"أذكر الأماكن التى يمارس فيها طالب التأمين الأعمال أو النشاط موضوع هذا "
+"التأمين و عدد المواقع   "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic
+msgid "أذكر بالتفصيل الأعمال أو النشاط موضوع هذا التأمين  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__name
+#: model:ir.model.fields,field_description:operation.field_specialist_model__name
+msgid "أسم طالب التامين "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__names_of_manager
+msgid "أسماء المديرين وخبراتهم السابق "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "ألاسم:"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "إقــــــــــرار"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic77
+msgid "إقــــــــــرار "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__file
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic26
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__file
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic26
+msgid "ارفاق مرفق  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__name
+msgid "اسم الشركة كاملا  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__topic49__1
+msgid "اقفال الابواب داخلياا"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__A
+msgid "الاستفسار عن الموظف عن طريق أماكن عمله السابقة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__name
+#: model:ir.model.fields,field_description:operation.field_sea_air_transport__name
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "الاسم"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "الاشخاص الاعتباريه"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "الاشخاص الطبيعيه"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__B
+msgid "البنوك"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "التدريب"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "التلفون:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__C
+msgid "الجيران "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__limit
+msgid "الحد الأقصى"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__limit
+msgid "الحد الأقصى للنقلة"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__limit
+msgid "الحد الأقصى للنقلة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__degree
+msgid "الدرجة"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "السراديب و الغرف المحصنة"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__address
+#: model:ir.model.fields,field_description:operation.field_specialist_model__address
+msgid "العنوان"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__address
+msgid "العنوان – المركز الرئيسي "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "العنوان:"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "الفاكس:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__doubel_lock
+msgid "القفل المزدوج"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__average
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__average
+msgid "المتوسط"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__model
+msgid "الموديل"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__location
+msgid "الموقع"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__activity
+#: model:ir.model.fields,field_description:operation.field_specialist_model__activity
+msgid "النشاط"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__type
+msgid "النوع"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__job
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__job
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "الوظيفة"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__day
+msgid "اليوم"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line6__day
+msgid "اليوم "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic69
+msgid "ام خارج الولايات المتحده  "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "اهل لديك تأمين سارى من المسئولية المدنية قبل الغير :"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic15
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic20
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic15
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic20
+msgid "ب- الإصابات الجسمانية فى الحادث الواحد  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic57
+msgid ""
+"برجاء إرفاق كشف بكافة السيارات التي سيتم تامين نقل الأموال التي تقوم بحملها "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "بيانات شخصية"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "بيانات شخصية :-"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "بيانات عامة"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "تاريخ بداية التامين المطلوب:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__phone
+msgid "تليفون "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "حجم – نسبة الأموال المستعملة:"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "حدود التغطية المطلوبة :-"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__limite_cost_insurance
+msgid "حدود مبالغ التامين المطلوبة"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "خاص ب A.T.M"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic73
+msgid ""
+"خاضع لإختبار حضور جوهرى، ويقصد به المقيم غير الأمريكى الموجود فى الولايات "
+"المتحدة الأمريكية منذ 183 يوماً كحد أدنى باحتساب كل أيام السنة الحالية، أو "
+"قضى ثلث                               الأيام من السنة السابقة مباشرة، أو سدس"
+" الأيام فى السنة الثانية ( وليس دبلوماسياً أو محاضراً أو طالباً أو رياضياً )"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic22
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic25
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic22
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic25
+msgid "د- عدد العمال  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__topic23
+#: model:ir.model.fields,field_description:operation.field_specialist_model__topic23
+msgid "ذ- اجمالى الرواتب خلال العام  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line4__close_time
+msgid "ساعة الإغلاق"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__D
+msgid "شهادة مخالفات مرورية "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic40
+msgid "صف طريقة الدخول لمباني الشركة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__cashtransfer_model__topic49__2
+msgid "طرق اخري"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_sea_air_transport
+#: model:ir.ui.menu,name:operation.sea_and_air_model
+msgid "طلب تأمين نقل بحرى و جوى"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__2
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__2
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__2
+msgid "طلب تأمين نقل نقدية"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__7
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__7
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__7
+msgid "طلب تامبن house hold"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__8
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__8
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__8
+msgid "طلب تامين اجسام سفن"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__9
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__9
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__9
+msgid "طلب تامين الحريق"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__5
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__5
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__5
+msgid "طلب تامين الحوادث الشخصية "
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.operation_form1
+msgid "طلب تامين مسؤليه مدنية "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__6
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__6
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__6
+msgid "طلب تامين مسؤوليه رب العمل "
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_operation_operation
+msgid "طلب تامين مسؤوليه مدنيه "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__3
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__3
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__3
+msgid "طلب تامين نقل بحري وجوي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields.selection,name:operation.selection__choose_model__type_of_insurance__4
+#: model:ir.model.fields.selection,name:operation.selection__operation_operation__type_of_insurance__4
+#: model:ir.model.fields.selection,name:operation.selection__specialist_model__type_of_insurance__4
+msgid "طلب تامين نقل برئ"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.Cash_transfer_insurance
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "طلب تامين نقل نقدية"
+msgstr ""
+
+#. module: operation
+#: model:ir.model,name:operation.model_cashtransfer_model
+msgid "طلب تامين نقل نقدية "
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.policy_menu_operation
+msgid "طلبات تامين مسؤولية مدنيه"
+msgstr ""
+
+#. module: operation
+#: model:ir.ui.menu,name:operation.policy_menu_cash
+msgid "طلبات تامين نقديه"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic27
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic47
+msgid "طواــــــــــــبع "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line2__numbers
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line3__numbers
+msgid "عدد المرات خلال الشهر"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "عدد سنوات الخبرة"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__experience
+msgid "عدد سنوات الخبره"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line__years
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "عدد سنوات في الشركة"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic26
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic46
+msgid "عملات معدنية"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "عند تعيين موظف . هل يتم الحصول علي المعلومات التالية"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic13
+msgid "عند تعيين موظف . هل يتم الحصول علي المعلومات التالية  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic43
+msgid ""
+"عندما تكون السيارة المجهزة غير مؤمنة و / أو ليس عليها حراسة   هل من سياسة "
+"الشركة المنفذة أن يوجد علي الأقل شخص واحد من الطاقم داخل السيارة في جميع "
+"الأوقات أثناء العمليات ؟ إذا كانت الإجابة بالنفي نرجوا ذكر التفاصيل المتبقية"
+"  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__phone2
+msgid "فاكس  "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "فروع أخري:"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid ""
+"في حالة تعاملكم بتغذية وحدات الصرف الآلي A.T.M نرجوا الإجابة علي التفاصيل "
+"آلاتية"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__code
+msgid "كود الإنذار"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic42
+msgid "ما هو الحد الأدنى لطاقم السيارة الواحدة بخلاف السائق "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic54
+msgid "ما هو عدد السيارات المجهزة – المسلحة  في الخدمة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic49
+msgid ""
+"ما هي الإجراءات التي يتم اتخاذها أثناء تواجد النقود أو الأشياء الأخرى داخل "
+"السيارة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic65
+msgid ""
+"ما هي الجهات التي يتم التعامل معها – استلام النقود والاشياء الثمينة لتوصيلها"
+" "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic19
+msgid ""
+"ما هي وسيلة تعرف عملائكم علي ناقلي النقدية ( صور – توقيعات – بطاقة تعريف ) "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__to_data
+#: model:ir.model.fields,field_description:operation.field_specialist_model__to_data
+msgid "مده التامين الي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_operation_operation__from_data
+#: model:ir.model.fields,field_description:operation.field_specialist_model__from_data
+msgid "مده التامين من "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic68
+msgid "مواطن امريكى مقيم داخل الولايات المتحده   "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic71
+msgid "مولود فى الولايات المتحدة الأمريكية ولم يتخل عن الجنسيه الامريكيه "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic58
+msgid "نرجوا موافاتنا بصورة من عقد نقل الأموال مع أحد عملائكم "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "نسب توزيع المبلغ السابق :-"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "نسب مبالغ التامين لكل نوع بالنسبة لاجمالي مبلغ التامين :-"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic5
+msgid "نشاط الشركة بالتفصيل :"
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "نشاط الشركة بالتفصيل:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic25
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic45
+msgid "نقـــديـــــــــــة "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "نقل الأموال"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic2
+msgid "نوع الشركة "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "نوع الشركة:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic29
+msgid ""
+"هل الحدود القصوى التي تم تحديدها بعالية هي الاحتياطات التي يجب توافرها بسبب "
+"متطلبات قانونية  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic62
+msgid "هل السيارات المخصصة لهذا الغرض تترك بدون حراسة ؟ لماذا "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic50
+msgid "هل السيارة يحتفظ بها في مكان آمن ومغلق عند عدم استخدامها  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic75
+msgid "هل الشركة المؤمن لها بها شركاء داخل الولايات المتحده الامريكيه  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic74
+msgid ""
+"هل الشركة المؤمن لها شركة امريكيه وتعمل داخل الولايات المتحده الامريكيه   "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.cashtransfer_model_form_type
+msgid "هل المؤمن له"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic67
+msgid ""
+"هل المؤمن له مواطن يحمل الجنسيه الامريكيه وجنسيه اخرى .. مزدوج الجنسيه  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic64
+msgid "هل الماكينات التي تقومون بخدمتها تحتوي علي شرائط لتخزين المعلومات "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic61
+msgid "هل تستخدم سيارات مجهزة لعمليات الصرف الآلي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic30
+msgid ""
+"هل تقوم بأداء عمليات فرز وتجميع النقود والعملات في غرفة عمليات مخصصة لهذا "
+"الغرض"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic76
+msgid "هل حجم التعامل يزيد عن 50الف دولار او ما يعادلها من العملات الاخرى  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic7
+msgid "هل سبق التامين لدي شركات أخرى ؟ ما هي ؟ "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "هل سبق التامين لدي شركات أخرى ؟ ما هي ؟ :"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic8
+msgid "هل سبق وان تم إلغاء وثائق تامين صادرة لصالحكم ؟ متي وأين ؟  "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid "هل كانت الشركة تعمل تحت أي مسمي آخر:"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic16
+msgid ""
+"هل لجميع العاملين المسلحين في عمليات نقل الأموال زي محدد (ملابس رسمية)؟"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic24
+msgid "هل مطلوب تغطية هذا الجزء في مباني الشركة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic37
+msgid ""
+"هل من المعتاد وجود حراسة طوال أل ساعة يوميا ؟ إذا كانت الإجابة بالنفي اذكر "
+"عدد ساعات العمل المعتادة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic9
+msgid ""
+"هل هناك حوادث وقعت خلال الخمس سنوات السابقة - ؟ نرجوا إيضاحها تفصيليا  ؟  "
+msgstr ""
+
+#. module: operation
+#: model_terms:ir.ui.view,arch_db:operation.report_cashtransfer_model
+msgid ""
+"هل هناك حوادث وقعت خلال الخمس سنوات السابقة - ؟ نرجوا إيضاحها تفصيليا  ؟    "
+":"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic66
+msgid ""
+"هل يتم استلام النقود لتوصيلها في نفس اليوم ؟ ام يمكن الاحتفاظ بها لليوم "
+"التالي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic22
+msgid "هل يتم تطبيق نظام التدريب و الإجراءات "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic56
+msgid "هل يتم نقل أموال أو أشياء ثمينة في سيارات غير مجهزة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic20
+msgid "هل يوجد برامج تدريب "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic33
+msgid "هل يوجد عقد لصيانة أجهزة الإنذار  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic60
+msgid "هل يوجد لديك موظف جاهز لتقديم الخدمة طوال أل ساعة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic15
+msgid "هل يوجد نسخة أخرى من هذه المستندات في مكان آخر  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic51
+msgid "هل يوجد نظام معين للمحافظة علي مفاتيح السيارة  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model_line5__control_unit
+msgid "وحدة التحكم"
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic52
+msgid "وصف للأنواع المستخدمة من اللاسلكي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic53
+msgid "وصف للأنواع المستخدمة من اللاسلكي  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic31
+msgid "وصف للغرف المحصنة / الخزائن في كل مبني -  موقع "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic70
+msgid "يحمل جواز سفر أمريكى "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic44
+msgid ""
+"– ما هو أقصى مبلغ يحتمل نقله من السيارة إلى الموقع المطلوب ويكون معرض للخطر "
+"( أخطار طريق )  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic34
+msgid ""
+"– هل أي شخص يعمل لديكم لديه كافة ألا كواد والإجراءات اللازمة لتشغيل أجهزة "
+"إنذار  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic41
+msgid ""
+"– هل جميع السيارات المستخدمة في نقل الأموال مجهزة بحاجز خاص أو ساتر يؤدي إلى"
+" حماية كاملة لشخص واحد علي الأقل من طاقم السيارة عند فتح أحد أبوابها ؟ في "
+"حالة النفي نرجوا شرح التفاصيل الخاصة بهذه النقطة "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic17
+msgid ""
+"– هل يتم تسليم جميع وثائق أو مستندات التعريف في حالة ترك الموظف للخدمة ؟ "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic12
+msgid ""
+"– هل يشترط أن يخضع جميع العملين الجدد للفحوصات  أ_كشف طبي ب_كاشف الكذب  "
+"ج_كشف نفسي "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic63
+msgid "– هل يوجد عدد ( 2 ) مسلح كحد ادني  "
+msgstr ""
+
+#. module: operation
+#: model:ir.model.fields,field_description:operation.field_cashtransfer_model__topic32
+msgid "– وصف لأنواع أجهزة الإنذار لكل مبني  "
+msgstr ""

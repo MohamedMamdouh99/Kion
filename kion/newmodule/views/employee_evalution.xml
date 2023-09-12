@@ -1,0 +1,153 @@
+<odoo>
+    <data>
+
+
+        <record id="employee_evalution_model_form" model="ir.ui.view">
+            <field name="name">employee evaluation form</field>
+            <field name="model">employee.evaluation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                    <notebook>
+                    <page  name="employee evaluation" string="employee evaluation">
+                    <group>
+                    <group string='Employee' name="active_group">
+                        <field name="employee_id"/>
+                    </group>
+                    <group string="Rate" name="identification_group">
+                        <field name="employee_rate"/>
+                    </group>
+                    </group>
+                    </page>
+<!--                    <page name="add ratting" string="add ratting">-->
+<!--                    <group>-->
+<!--                        <field name="value_a"/>-->
+<!--                        <field name="value_b"/>-->
+<!--                        <field name="value_c"/>-->
+<!--                        <button name="enter_values" type="object" string="save values"/>-->
+<!--                    </group>-->
+
+<!--                    </page>-->
+               </notebook>
+                </sheet>
+                     <div class="oe_chatter">
+                                <field name="message_follower_ids"/>
+                                <field name="activity_ids"/>
+                                <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                             </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="employee_evalution_model_tree" model="ir.ui.view">
+            <field name="name">employee evaluation tree</field>
+            <field name="model">employee.evaluation</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="employee_id"/>
+                    <field name="employee_rate"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="employee_evalution_action_menu1">
+            <field name="name">employee evaluation</field>
+            <field name="res_model">employee.evaluation</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!-- This Menu Item must have a parent and an action -->
+
+
+         <menuitem name="employee evaluation" id="menu_for_emlpoyee_evalutionn"
+                  parent="oh_appraisal.menu_hr_appraisal_root"/>
+
+        <menuitem id="menu_for_open_emlpoyee_evalutionn" name="employee evaluation" parent="menu_for_emlpoyee_evalutionn"  action="employee_evalution_action_menu1" sequence="1"/>
+
+
+
+
+<!-- add ratinng model-->
+
+
+
+
+
+
+
+
+
+
+        <record id="Add_ratting_model_form" model="ir.ui.view">
+            <field name="name">add emlpoyee rate form</field>
+            <field name="model">add.emlpoyee.rate</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                    <notebook>
+
+                    <page name="add rate Values for this year" string="add rate Values for this year">
+                    <group>
+                        <field name="value_a"/>
+                        <field name="value_b"/>
+                        <field name="value_c"/>
+                         <field name="value_c_minus"/>
+
+                    </group>
+
+                    </page>
+               </notebook>
+                </sheet>
+                     <div class="oe_chatter">
+                                <field name="message_follower_ids"/>
+                                <field name="activity_ids"/>
+                                <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                             </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="Add_ratting_model_tree" model="ir.ui.view">
+            <field name="name">add emlpoyee rate tree</field>
+            <field name="model">add.emlpoyee.rate</field>
+            <field name="arch" type="xml">
+                <tree>
+                        <field name="value_a"/>
+                        <field name="value_b"/>
+                        <field name="value_c"/>
+                        <field name="value_c_minus"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="emlpoyee_add_rate_menu_action">
+            <field name="name">ADD Rate Value</field>
+            <field name="res_model">add.emlpoyee.rate</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem name="ADD Rate Value" id="add_emlpoyee_rate_menu_id"
+                  parent="menu_for_emlpoyee_evalutionn"
+                  action="emlpoyee_add_rate_menu_action"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

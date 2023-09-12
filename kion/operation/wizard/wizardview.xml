@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+
+<!--wizzzzzzzzzzzzzzzzzzzzzardddddddddddddddddd-->
+
+
+
+
+   <record id="popwizard_task_new" model="ir.actions.act_window">
+            <field name="name">Password</field>
+            <field name="res_model">pop.wizard.cancel</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
+
+
+          <record id="id_popwizard_task_neew_id" model="ir.ui.view">
+            <field name="name">Password</field>
+            <field name="model">pop.wizard.cancel</field>
+            <field name="arch" type="xml">
+                <form string="this is wizard">
+                    <group>
+                    <field name="values"/>
+                    </group>
+                    <group>
+                    <button name="clickk" string="click"  class="btn-primary" type="object" />
+                    </group>
+
+
+                </form>
+            </field>
+        </record>
+
+
+
+
+
+
+
+
+
+    </data>
+
+
+
+
+
+
+
+
+</odoo>

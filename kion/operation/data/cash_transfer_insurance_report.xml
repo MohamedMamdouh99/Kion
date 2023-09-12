@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+    <record id="action_report_cash_transfer_insurance" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">cashtransfer.model</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.report_cashtransfer_model</field>
+            <field name="report_file">operation.report_cashtransfer_model</field>
+            <field name="binding_model_id" ref="model_sea_air_transport"/>
+            <field name="binding_type">report</field>
+    </record>
+
+
+      <template id="report_cashtransfer_model">
+        <t t-call="web.html_container">
+
+
+          <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>طلب تامين نقل نقدية</h2>
+                            <p>ألاسم: <span t-field="o.name"/></p>
+                            <p>العنوان: <span t-field="o.address"/></p>
+                            <p>التلفون: <span t-field="o.phone"/></p>
+                            <p>الفاكس:<span t-field="o.phone2"/></p>
+                            <p> فروع أخري:<span t-field="o.topic"/></p>
+                            <p> نوع الشركة:<span t-field="o.topic2"/></p>
+                            <p> هل كانت الشركة تعمل تحت أي مسمي آخر:<span t-field="o.topic3"/></p>
+                            <p> حجم – نسبة الأموال المستعملة:<span t-field="o.topic4"/></p>
+                            <p>نشاط الشركة بالتفصيل:<span t-field="o.topic5"/></p>
+                            <p>تاريخ بداية التامين المطلوب:<span t-field="o.topic6"/></p>
+                            <p>هل سبق التامين لدي شركات أخرى ؟ ما هي ؟ :<span t-field="o.topic7"/></p>
+                            <p>هل هناك حوادث وقعت خلال الخمس سنوات السابقة - ؟ نرجوا إيضاحها تفصيليا  ؟    :<span t-field="o.topic9"/></p>
+                            <p> اهل لديك تأمين سارى من المسئولية المدنية قبل الغير :<span t-field="o.topic10"/></p>
+                            <h3>  بيانات شخصية :- </h3>
+                            <p>1 – أسماء المديرين وخبراتهم السابقة :-:</p>
+
+
+                                <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                                <th style="border: 1px solid gray;text-align: center;"> الاسم</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> الوظيفة</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> عدد سنوات في الشركة</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> عدد سنوات الخبرة</th>
+
+
+                                            </tr>
+
+                                    <t t-foreach="o.names_of_manager" t-as="doc">
+
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.name"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.job"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.years"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.experience"/></td>
+
+                                           </tr>
+
+
+
+
+                                    </t>
+
+
+
+
+
+                                 </table>
+                            <p> بعد التحري والتقصي عن الموظفين لديكم .  هل يوجد أي شخص اشترك في حوادث سطو علي سيارة مجهزة :<span t-field="o.topic11"/></p>
+                            <p> هل يشترط أن يخضع جميع العملين الجدد للفحوصات  أ_كشف طبي ب_كاشف الكذب  ج_كشف نفسي  :<span t-field="o.topic12"/></p>
+                            <p>  عدد الموظفين الدائمين في كل نوع من الأنواع المذكورة :<span t-field="o.topic101"/></p>
+                            <p> هل يوجد عمالة تعمل نصف الوقت :<span t-field="o.topic111"/></p>
+                            <p> هل يشترط أن يخضع جميع العملين الجدد للفحوصات التالية  :</p>
+                            <p>هل يشترط أن يخضع جميع العملين الجدد للفحوصات  أ_كشف طبي ب_كاشف الكذب  ج_كشف نفسي   :<span t-field="o.topic12"/></p>
+                            <p> عند تعيين موظف . هل يتم الحصول علي المعلومات التالية</p>
+                            <p> الاستفسار عن الموظف عن طريق أماكن عمله السابقة :<span t-field="o.A"/></p>
+                            <p> اهل لديك تأمين سارى من المسئولية المدنية قبل الغير :<span t-field="o.topic10"/></p>
+                            <p> البنوك :<span t-field="o.B"/></p>
+                            <p> الجيران :<span t-field="o.C"/></p>
+                            <p> شهادة مخالفات مرورية :<span t-field="o.D"/></p>
+                            <p> هل يتم الاحتفاظ بصور شخصية – فيش وتشبيه للموظفين  :<span t-field="o.topic14"/></p>
+                            <p> هل يوجد نسخة أخرى من هذه المستندات في مكان آخر  :<span t-field="o.topic15"/></p>
+                            <p> هل لجميع العاملين المسلحين في عمليات نقل الأموال زي محدد (ملابس رسمية) :<span t-field="o.topic16"/></p>
+                            <p> هل يتم تسليم جميع وثائق أو مستندات التعريف في حالة ترك الموظف للخدمة:<span t-field="o.topic17"/></p>
+
+                            <p> ما هي وسيلة تعرف عملائكم علي ناقلي النقدية ( صور – توقيعات – بطاقة تعريف ) :<span t-field="o.topic19"/></p>
+
+
+                            <h3>التدريب </h3>
+                            <p> هل يوجد برامج تدريب :<span t-field="o.topic20"/></p>
+                            <p>هل يوجد نظام مكتوب لإجراءات العمل :<span t-field="o.topic21"/></p>
+                            <p> هل يتم تطبيق نظام التدريب و الإجراءات :<span t-field="o.topic22"/></p>
+
+                            <p> ما هي فترة الاختبار التي يستغرقها الموظف لكي يبدا العمل :<span t-field="o.topic23"/></p>
+
+                            <h3>السراديب و الغرف المحصنة :- </h3>
+
+                            <p> هل مطلوب تغطية هذا الجزء في مباني الشركة  :<span t-field="o.topic24"/></p>
+
+                           <p>حدود مبالغ التامين المطلوبة </p>
+                             <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                                <th style="border: 1px solid gray;text-align: center;"> اليوم</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> الحد الأقصى للنقلة</th>
+                                                <th style="border: 1px solid gray;text-align: center;">عدد المرات خلال الشهر</th>
+                                                <th style="border: 1px solid gray;text-align: center;">المتوسط</th>
+
+
+                                            </tr>
+
+                                    <t t-foreach="o.limite_cost_insurance" t-as="doc">
+
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.day"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.limit"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.numbers"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.average"/></td>
+
+                                           </tr>
+
+
+
+
+                                    </t>
+
+
+
+
+
+                                 </table>
+
+
+
+                            <p> نسب مبالغ التامين لكل نوع بالنسبة لاجمالي مبلغ التامين :- </p>
+
+                            <p> نقـــديـــــــــــة      :<span t-field="o.topic25"/></p>
+                            <p> عملات معدنية      :<span t-field="o.topic26"/></p>
+                            <p> طواــــــــــــبع   :<span t-field="o.topic27"/></p>
+                            <p> أخـــــــــــرى   :<span t-field="o.topic28"/></p>
+
+
+
+                            <p> هل الحدود القصوى التي تم تحديدها بعالية هي الاحتياطات التي يجب توافرها بسبب متطلبات قانونية :<span t-field="o.topic29"/></p>
+
+                            <p>هل تقوم بأداء عمليات فرز وتجميع النقود والعملات في غرفة عمليات مخصصة لهذا الغرض</p>
+
+                            <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                                <th style="border: 1px solid gray;text-align: center;"> النوع</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> الحد الأقصى</th>
+                                                <th style="border: 1px solid gray;text-align: center;">عدد المرات خلال الشهر</th>
+                                                <th style="border: 1px solid gray;text-align: center;">المتوسط</th>
+
+
+                                            </tr>
+
+                                    <t t-foreach="o.topic30" t-as="doc">
+
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.type"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.limit"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.numbers"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.average"/></td>
+
+                                           </tr>
+
+
+
+
+                                    </t>
+
+
+
+
+
+                                 </table>
+
+
+                            <p>وصف للغرف المحصنة / الخزائن في كل مبني -  موقع</p>
+
+                            <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                                <th style="border: 1px solid gray;text-align: center;"> الموقع</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> الوظيفة</th>
+                                                <th style="border: 1px solid gray;text-align: center;">الموديل</th>
+                                                <th style="border: 1px solid gray;text-align: center;">القفل المزدوج</th>
+                                                <th style="border: 1px solid gray;text-align: center;">ساعة الإغلاق</th>
+
+
+                                            </tr>
+
+                                    <t t-foreach="o.topic31" t-as="doc">
+
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.location"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.job"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.model"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.doubel_lock"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.close_time"/></td>
+
+                                           </tr>
+
+
+
+
+                                    </t>
+
+
+
+
+
+                                 </table>
+
+
+
+
+
+                            <p>وصف لأنواع أجهزة الإنذار لكل مبني </p>
+
+                            <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                                <th style="border: 1px solid gray;text-align: center;"> كود الإنذار</th>
+                                                <th style="border: 1px solid gray;text-align: center;"> وحدة التحكم</th>
+                                                <th style="border: 1px solid gray;text-align: center;">الدرجة</th>
+
+
+                                            </tr>
+
+                                    <t t-foreach="o.topic32" t-as="doc">
+
+
+                                           <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.code"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.control_unit"/></td>
+                                              <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.degree"/></td>
+
+
+                                           </tr>
+
+
+
+
+                                    </t>
+
+
+
+
+
+                                 </table>
+
+
+
+
+
+
+
+                            <p> هل يوجد عقد لصيانة أجهزة الإنذار:<span t-field="o.topic33"/></p>
+
+                            <p> هل أي شخص يعمل لديكم لديه كافة ألا كواد والإجراءات اللازمة لتشغيل أجهزة إنذار :<span t-field="o.topic34"/></p>
+
+                            <p> هل يتم فتح أو غلق الخزائن و الغرف المحصنة إلا بوجود عدد محدد من الأشخاص :<span t-field="o.topic35"/></p>
+
+                            <p>  كم مرة يتم تعديل اكواد النظام ونظام فتح الخزائن والغرف المحصنة  :<span t-field="o.topic36"/></p>
+                            <p>هل من المعتاد وجود حراسة طوال أل ساعة يوميا ؟ إذا كانت الإجابة بالنفي اذكر عدد ساعات العمل المعتادة:<span t-field="o.topic37"/></p>
+
+
+                            <p> كم عدد الأشخاص الموجودين في الخدمة أثناء :- ساعات العمل الرسمية المسلحين وغير المسلحين :<span t-field="o.topic38"/></p>
+
+                            <p>  كم عدد الأشخاص الموجودين في الخدمة أثناء :-غير ساعات العمل الرسمية:<span t-field="o.topic39"/></p>
+
+
+                            <p>  كم عدد الأشخاص الموجودين في الخدمة أثناء :- ساعات العمل الرسمية المسلحين وغير المسلحين :<span t-field="o.topic38"/></p>
+
+                            <p>  كم عدد الأشخاص الموجودين في الخدمة أثناء :-غير ساعات العمل الرسمية:<span t-field="o.topic39"/></p>
+                            <p>  صف طريقة الدخول لمباني الشركة :<span t-field="o.topic40"/></p>
+                            <h2>نقل الأموال :- </h2>
+                            <p>  – هل جميع السيارات المستخدمة في نقل الأموال مجهزة بحاجز خاص أو ساتر يؤدي إلى حماية كاملة لشخص واحد علي الأقل من طاقم السيارة عند فتح أحد أبوابها ؟ في حالة النفي نرجوا شرح التفاصيل الخاصة بهذه النقطة  :<span t-field="o.topic41"/></p>
+
+                            <p> ما هو الحد الأدنى لطاقم السيارة الواحدة بخلاف السائق :<span t-field="o.topic42"/></p>
+
+
+                            <p>  عندما تكون السيارة المجهزة غير مؤمنة و / أو ليس عليها حراسة   هل من سياسة الشركة المنفذة أن يوجد علي الأقل شخص واحد من الطاقم داخل السيارة في جميع الأوقات أثناء العمليات ؟ إذا كانت الإجابة بالنفي نرجوا ذكر التفاصيل المتبقية :<span t-field="o.topic43"/></p>
+
+
+
+
+
+                             <p>ما هو أقصى مبلغ يحتمل نقله من السيارة إلى الموقع المطلوب ويكون معرض للخطر ( أخطار طريق )  </p>
+
+                                    <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                                    <tr>
+                                                        <th style="border: 1px solid gray;text-align: center;">اليوم </th>
+                                                        <th style="border: 1px solid gray;text-align: center;">الحد الأقصى للنقلة </th>
+
+
+                                                    </tr>
+
+                                            <t t-foreach="o.topic44" t-as="doc">
+
+
+                                                   <tr>
+                                                      <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.day"/></td>
+                                                      <td style="border-left: 1px solid gray;text-align:left;"><span t-field="doc.limit"/></td>
+
+
+                                                   </tr>
+
+
+
+
+                                            </t>
+
+
+
+
+
+                                 </table>
+                            <p>نسب توزيع المبلغ السابق :-</p>
+                            <p> نقـــديـــــــــــة :<span t-field="o.topic45"/></p>
+                            <p>  ملات معدنية:<span t-field="o.topic46"/></p>
+                            <p> طواــــــــــــبع:<span t-field="o.topic47"/></p>
+                            <p> أخـــــــــــرى:<span t-field="o.topic48"/></p>
+
+
+
+
+                            <p> ما هي الإجراءات التي يتم اتخاذها أثناء تواجد النقود أو الأشياء الأخرى داخل السيارة:<span t-field="o.topic49"/></p>
+                            <p> هل السيارة يحتفظ بها في مكان آمن ومغلق عند عدم استخدامها :<span t-field="o.topic50"/></p>
+                            <p> هل يوجد نظام معين للمحافظة علي مفاتيح السيارة:<span t-field="o.topic51"/></p>
+                            <p> وصف للأنواع المستخدمة من اللاسلكي:<span t-field="o.topic52"/></p>
+
+                            <p> وصف للأنواع المستخدمة من اللاسلكي :<span t-field="o.topic53"/></p>
+
+
+                            <p> ما هو عدد السيارات المجهزة – المسلحة  في الخدمة:<span t-field="o.topic54"/></p>
+
+                            <p>  ما هو عدد السيارات الاحتياطي:<span t-field="o.topic55"/></p>
+
+
+                            <p> هل يتم نقل أموال أو أشياء ثمينة في سيارات غير مجهزة :<span t-field="o.topic56"/></p>
+
+                            <p> برجاء إرفاق كشف بكافة السيارات التي سيتم تامين نقل الأموال التي تقوم بحملها:<span t-field="o.topic57"/></p>
+
+                            <p> نرجوا موافاتنا بصورة من عقد نقل الأموال مع أحد عملائكم:<span t-field="o.topic58"/></p>
+                            <h2>خاص ب A.T.M في حالة تعاملكم بتغذية أو أية أعمال خاصة به:-</h2>
+                            <p> ما هو نوع الخدمة التي تقدمها:<span t-field="o.topic59"/></p>
+
+                            <p> هل يوجد لديك موظف جاهز لتقديم الخدمة طوال أل ساعة:<span t-field="o.topic60"/></p>
+
+                            <p> هل تستخدم سيارات مجهزة لعمليات الصرف الآلي:<span t-field="o.topic61"/></p>
+                            <p> هل السيارات المخصصة لهذا الغرض تترك بدون حراسة ؟ لماذا:<span t-field="o.topic62"/></p>
+                            <p> هل يوجد عدد ( 2 ) مسلح كحد ادني :<span t-field="o.topic63"/></p>
+                            <p> هل الماكينات التي تقومون بخدمتها تحتوي علي شرائط لتخزين المعلومات:<span t-field="o.topic64"/></p>
+                            <p> ما هي الجهات التي يتم التعامل معها – استلام النقود والاشياء الثمينة لتوصيلها:<span t-field="o.topic65"/></p>
+                            <p> هل يتم استلام النقود لتوصيلها في نفس اليوم ؟ ام يمكن الاحتفاظ بها لليوم التالي :<span t-field="o.topic66"/></p>
+
+                            <h4>الاشخاص الطبيعيه </h4>
+                            <p> هل المؤمن له مواطن يحمل الجنسيه الامريكيه وجنسيه اخرى .. مزدوج الجنسيه:<span t-field="o.topic67"/></p>
+                            <p> مواطن امريكى مقيم داخل الولايات المتحده   :<span t-field="o.topic68"/></p>
+                            <p> ام خارج الولايات المتحده:<span t-field="o.topic69"/></p>
+                            <p> يحمل جواز سفر أمريكى:<span t-field="o.topic70"/></p>
+                            <p> مولود فى الولايات المتحدة الأمريكية ولم يتخل عن الجنسيه الامريكيه:<span t-field="o.topic71"/></p>
+                            <p>  مقيم إقامة دائمة وبصورة شرعية بالولايات المتحده الامريكيه ( أى حامل الإقامة الدائمة Green Card) :<span t-field="o.topic72"/></p>
+                            <p> 'خاضع لإختبار حضور جوهرى، ويقصد به المقيم غير الأمريكى الموجود فى الولايات المتحدة الأمريكية منذ 183 يوماً كحد أدنى باحتساب كل أيام السنة الحالية، أو قضى ثلث  الأيام من السنة السابقة مباشرة، أو سدس الأيام فى السنة الثانية ( وليس دبلوماسياً أو محاضراً أو طالباً أو رياضياً )  :<span t-field="o.topic73"/></p>
+                           <h4>الاشخاص الاعتباريه </h4>
+                            <p> هل الشركة المؤمن لها شركة امريكيه وتعمل داخل الولايات المتحده الامريكيه:<span t-field="o.topic74"/></p>
+                            <p> هل الشركة المؤمن لها بها شركاء داخل الولايات المتحده الامريكيه:<span t-field="o.topic75"/></p>
+                            <p> هل حجم التعامل يزيد عن 50الف دولار او ما يعادلها من العملات الاخرى :<span t-field="o.topic76"/></p>
+
+                            <h4>إقــــــــــرار</h4>
+
+                            <p>إقــــــــــرار :<span t-field="o.topic77"/></p>
+
+
+
+
+                        </div>
+                    </t>
+                </t>
+        </t>
+      </template>
+
+
+
+
+</odoo>

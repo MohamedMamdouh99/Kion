@@ -1,0 +1,235 @@
+<odoo>
+
+
+    <data>
+        <!--claims template after _ fix _____________________________-->
+
+
+        <record id="mail_after_fix_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_after_fix"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject">طلب معاينة بعد الاصلاح</field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.action_report_after_fix"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+
+
+
+
+
+
+
+
+        <!--claims template before _ fix _____________________________-->
+
+
+        <record id="mail_before_fix_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_claims_model"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject">طلب معاينة قبل الاصلاح</field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.action_report_before_fix"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--claims template before _ fix _____________________________-->
+
+
+        <record id="car_enter_model_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_car_model"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject">اذن دخول سيارة</field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.action_report_car_model"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+       <!--client document template _____________________________-->
+
+
+        <record id="client_document_model_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_client_document"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject">طلب وثيقة عميل </field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.action_report_client_document"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+
+
+       <!--exit_permission template _____________________________-->
+
+
+        <record id="exit_permission_model_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_exit_permission"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject"> اذن خروج </field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.exit_permission_report_model"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+       <!--equal_form template _____________________________-->
+
+
+        <record id="equal_model_template1dd1" model="mail.template">
+            <field name="name">bib Template</field>
+            <field name="model_id" ref="model_equal_model"/>
+            <field name="email_from">{{object.env.user.work_email}}</field>
+            <field name="subject"> نموذج تسوية </field>
+            <field name="auto_delete" eval="True"/>
+
+
+            <field name="body_html" type="html">
+                <div>
+                    hello we are bib company and this form about insurance order
+                </div>
+                <div>ألاسم :
+                    <t t-out="object.name"/>
+                </div>
+                <div>ملاحظات :
+                    <t t-out="object.note_sent"/>
+                </div>
+
+
+            </field>
+            <field name="report_template" ref="operation.equal_model_report_model"/>
+            <field name="report_name">{{ (object.name or '')}}</field>
+            <field name="lang">{{ object.choose_partner.lang }}</field>
+
+
+        </record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </data>
+
+
+</odoo>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+    <record id="action_report_sea_and_air" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">sea.air.transport</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.report_sea_air_transport</field>
+            <field name="report_file">operation.report_sea_air_transport</field>
+            <field name="binding_model_id" ref="model_sea_air_transport"/>
+            <field name="binding_type">report</field>
+    </record>
+
+
+      <template id="operation.report_sea_air_transport">
+        <t t-call="web.html_container">
+
+
+          <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>طلب تأمين نقل بحرى / جوى</h2>
+                            <p>	إسم المؤمن له: <span t-field="o.name"/></p>
+                            <p>نوع البضاعة: <span t-field="o.topic1"/></p>
+                            <p>طريقة الشحن: <span t-field="o.topic2"/></p>
+                            <p>الحجم أو الوزن القائم للرسالة:<span t-field="o.topic3"/></p>
+                            <p> مبلغ التأمين:<span t-field="o.topic4"/></p>
+                            <p> إعتماد مستندى رقم / إستمارة ت.ص رقم :<span t-field="o.topic5"/></p>
+                            <p> إسم الباخرة:<span t-field="o.topic6"/></p>
+                            <p> ميناء الشحن:<span t-field="o.topic7"/></p>
+                            <p>تاريخ الشحن<span t-field="o.topic8"/></p>
+                            <p>ميناء الوصول:<span t-field="o.topic9"/></p>
+                            <p>تاريخ الوصول :<span t-field="o.topic10"/></p>
+                            <p>الرحلـة من<span t-field="o.topic11"/></p>
+                            <p> إلى :<span t-field="o.topic12"/></p>
+                            <p> إسم المورد / إسم المرسل إليه :<span t-field="o.topic13"/></p>
+                            <p> قيمة الرسالة :<span t-field="o.topic14"/></p>
+                            <p> الأخطار المؤمن ضدها : شروط المجمع لتأمين البضائع ( أ ) أو ( ج ) أو (فقد كلى) :<span t-field="o.topic15"/></p>
+                            <p> شروط المجمع لتأمين الحرب والإضرابات (بضائع) – التأمين ضد أخطار الحروب' :<span t-field="o.topic16"/></p>
+                            <p> ملاحظـات :<span t-field="o.topic17"/></p>
+                            <h4>•	إقرار </h4>
+                            <p>نرغب فى إبرام هذا التأمين مع المجموعة العربية المصرية للتأمين طبقا لما ذكر اعلاه ، ونقر نحن الموقعين ادناه ان جميع البيانات الواردة فى هذا الطلب صحيحة وتطابق الواقع واننا لم نخف عن الشركة اى من البيانات المتعلقة بالأخطار المراد التأمين عليها ونوافق على ان يكون هذا الطلب اساسا لعقد التأمين.
+                                    يبدأ سريان هذا التأمين بمجرد قبول الشركة لهذا الطلب وبعد قيامكم بسداد القسط المطلوب</p>
+                            <p> <span t-field="o.topic19"/></p>
+                            <p> التاريخ :<span t-field="o.topic20"/></p>
+                            <p> توقيع طالب التأمين :<span t-field="o.topic21"/></p>
+
+
+
+
+                        </div>
+                    </t>
+                </t>
+        </t>
+      </template>
+
+
+
+
+</odoo>

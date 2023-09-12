@@ -1,0 +1,125 @@
+    <odoo>
+
+
+<!--          <record id="appeer_btn_from_user" model="res.groups">-->
+<!--                <field name="name">btnuserdisapper</field>-->
+<!--          </record>-->
+
+
+<!--للتحكم في ظهور حضور الموظف-->
+
+
+
+<!-- <record model="ir.module.category" id="employeees_show_attendes">-->
+<!--        <field name="name">employees only show attends </field>-->
+
+<!--        <field name="sequence">7</field>-->
+<!--    </record>-->
+
+<!--    <record id="employees_acess_group_show_attendes" model="res.groups">-->
+<!--        <field name="name">employees only show attends</field>-->
+<!--        <field name="category_id" ref="employeees_show_attendes"/>-->
+<!--    </record>-->
+
+
+<!--&lt;!&ndash;&lt;!&ndash;make record  rules    دي بقي عشان اتحكم في الداتا اللي هتظهر جوا الصفحه &ndash;&gt;&ndash;&gt;-->
+
+
+<!--        <record id="employees_hidden_other_attends" model="ir.rule">-->
+<!--        <field name="name">Employee access attends only</field>-->
+<!--        <field name="model_id" ref="model_hr_attendance"/>-->
+<!--        <field name="domain_force">[('therelluser','=',user.id)]</field>-->
+<!--        <field name="groups" eval="[(4, ref('hassantask.employees_acess_group_show_attendes'))]"/>-->
+
+<!--        </record>-->
+
+
+
+
+<!--&lt;!&ndash;make group للتحكم في ظهور الصفحه واختفاءها&ndash;&gt;-->
+
+
+
+ <record model="ir.module.category" id="employeees_hoecanaccess_attendences">
+        <field name="name">Show My Attendances</field>
+
+        <field name="sequence">8</field>
+    </record>
+
+    <record id="employees_acess_group_attends" model="res.groups">
+        <field name="name">Show My Attendances</field>
+        <field name="category_id" ref="employeees_hoecanaccess_attendences"/>
+    </record>
+
+
+<!--&lt;!&ndash;make record  rules    دي بقي عشان اتحكم في الداتا اللي هتظهر جوا الصفحه &ndash;&gt;-->
+
+
+        <record id="attendances_access_rules_custom" model="ir.rule">
+        <field name="name">Employee access attends</field>
+        <field name="model_id" ref="hr_attendance.model_hr_attendance"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('newmodule.employees_acess_group_attends'))]"/>
+
+        </record>
+
+
+
+
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;&lt;!&ndash; &ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+
+
+
+<!--    <record model="ir.module.category" id="student_results_access">-->
+<!--        <field name="name">edit on student results</field>-->
+
+<!--        <field name="sequence">8</field>-->
+<!--    </record>-->
+
+<!--    <record id="student_cannot_edit" model="res.groups">-->
+<!--        <field name="name">edit on student results</field>-->
+<!--        <field name="category_id" ref="student_results_access"/>-->
+<!--    </record>-->
+
+<!--&lt;!&ndash;        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&ndash;&gt;-->
+
+
+<!--      <record id="company_access_ruless" model="ir.rule">-->
+<!--            <field name="name">company access rulles</field>-->
+<!--            <field name="model_id" ref="model_student_results"/>-->
+<!--            <field name="domain_force">[('company_id','=',company_id)]</field>-->
+<!--            <field name="groups" eval="[(4, ref('hassantask.student_cannot_edit'))]"/>-->
+
+<!--      </record>-->
+
+
+
+<!--record rulesssssssssssssssssssss-->
+
+
+
+
+
+<!--        ><>>>>>>>>>>>>>>>>>>>-->
+
+
+<!--    <record model="ir.module.category" id="student_results_notaccess">-->
+<!--        <field name="name">cannot edit on student results</field>-->
+
+<!--        <field name="sequence">9</field>-->
+<!--    </record>-->
+
+<!--    <record id="cannotstudent_edit" model="res.groups">-->
+<!--        <field name="name">cannot edit on student results</field>-->
+<!--        <field name="category_id" ref="student_results_notaccess"/>-->
+<!--    </record>-->
+
+
+
+
+
+
+
+
+
+    </odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+
+
+
+
+<!--    <record id="account_invoice_download_cron" model="ir.cron">-->
+<!--    <field name="name">Download Vendor Bills</field>-->
+<!--    <field name="active" eval="False"/>-->
+<!--    <field name="user_id" ref="base.user_root"/>-->
+<!--    <field name="interval_number">1</field>-->
+<!--    <field name="interval_type">days</field>-->
+<!--    <field name="numbercall">-1</field> &lt;!&ndash; don't limit the number of calls &ndash;&gt;-->
+<!--    &lt;!&ndash; v10 and lower &ndash;&gt;-->
+<!--    <field name="model" eval="'account.invoice.download.account'"/>-->
+<!--    <field name="function">run_cron</field>-->
+<!--    <field name="args">()</field>-->
+<!--    &lt;!&ndash; v11+  &ndash;&gt;-->
+<!--    <field name="model_id" ref="model_account_invoice_download_account"/>-->
+<!--    <field name="state">code</field>-->
+<!--    <field name="code">model.get_next_mail()</field>-->
+<!--</record>-->
+
+
+
+
+
+
+
+
+<!--    <record id="ir_cron_ptr_mail_messages_fetch_mail" model="ir.cron">-->
+<!--        <field name="name">Email_fetch_message</field>-->
+<!--        <field name="user_id" ref="base.user_root" />-->
+<!--        <field name="model_id" ref="model_mail_message" />-->
+<!--        <field name="state">code</field>-->
+<!--        <field name="code">model._fetch_mails()</field>-->
+<!--        <field name="interval_number">1</field>-->
+<!--        <field name="interval_type">Minutes</field>-->
+<!--        <field-->
+<!--            name="nextcall"-->
+<!--            eval="(DateTime.now() + timedelta(Minutes=1)).strftime('%Y-%m-%d %H:%M:%S')"-->
+<!--        />-->
+<!--        <field name="numbercall">-1</field>-->
+<!--        <field name="doall" eval="False" />-->
+<!--        <field name="active" eval="True" />-->
+<!--    </record>-->
+
+
+</odoo>

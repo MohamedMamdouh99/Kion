@@ -1,0 +1,509 @@
+<odoo>
+    <data>
+
+
+        <record model="ir.ui.view" id="cashtransfer_model_form_type">
+            <field name="name">cashtransfer model</field>
+            <field name="model">cashtransfer.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_confirm" id="action_confirm" data-hotkey="v"
+                                string="Confirm" class="btn-primary" type="object" attrs="{'invisible': ['|','|','|',('state', '=', 'confirm'),('state', '=', 'send_email'),('state', '=', 'end_mail'),('state', '=', 'select_offer')]}"/>
+
+                        <button name="send_user_order"  data-hotkey="v"
+                                string="send email" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','confirm')]}" groups="operation.specialist_team_groups"/>
+
+                        <button name="select_offer"  data-hotkey="v"
+                                string="Select Offer" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','send_email'),('state','!=','select_offer')]}" groups="operation.specialist_team_groups"/>
+
+
+                        <button name="end_mail"  data-hotkey="v"
+                                            string="End Mail" class="btn-primary" type="object" attrs="{'invisible': [('state','!=','select_offer')]}" groups="operation.specialist_team_groups"/>
+
+                        <button name="cancel_operation"  data-hotkey="v"
+                                string="cancel" class="btn-primary" type="object" attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}" groups="operation.cancel_end_mail_group"/>
+
+                        <field name="state" widget="statusbar"/>
+
+
+
+
+
+                    </header>
+
+                    <sheet>
+                        <notebook>
+                            <page string="بيانات عامة">
+
+                                <group>
+                                    <field name="name"/>
+                                    <field name="address"/>
+                                    <field name="phone"/>
+                                    <field name="phone2"/>
+                                    <field name="topic"/>
+                                    <field name="topic2"/>
+                                    <field name="topic3"/>
+                                    <field name="topic4"/>
+                                    <field name="topic5"/>
+                                    <field name="topic6"/>
+                                    <field name="topic7"/>
+                                    <field name="topic8"/>
+                                    <field name="topic9"/>
+                                    <field name="topic10"/>
+
+
+                                </group>
+                            </page>
+                            <page string=" بيانات شخصية ">
+
+
+                                <group>
+                                    <field name="names_of_manager"/>
+                                    <field name="topic11"/>
+                                    <field name="topic101"/>
+                                    <field name="topic111"/>
+                                    <field name="topic12"/>
+                                </group>
+                                <group string="عند تعيين موظف . هل يتم الحصول علي المعلومات التالية ">
+                                    <field name="A"/>
+                                    <field name="B"/>
+                                    <field name="C"/>
+                                    <field name="D"/>
+
+                                </group>
+                                <group>
+                                    <field name="topic14"/>
+                                    <field name="topic15"/>
+                                    <field name="topic16"/>
+                                    <field name="topic17"/>
+                                    <field name="topic19"/>
+                                </group>
+
+
+                            </page>
+                            <page string="التدريب ">
+                                <group>
+                                    <field name="topic20"/>
+                                    <field name="topic21"/>
+                                    <field name="topic22"/>
+                                    <field name="topic23"/>
+                                </group>
+
+
+                            </page>
+                            <page string="السراديب و الغرف المحصنة  ">
+                                <group>
+                                    <field name="topic24"/>
+                                </group>
+                                <group>
+                                    <field name="limite_cost_insurance"/>
+                                </group>
+                                <group string="نسب مبالغ التامين لكل نوع بالنسبة لاجمالي مبلغ التامين :- ">
+                                    <field name="topic25"/>
+                                    <field name="topic26"/>
+                                    <field name="topic27"/>
+                                    <field name="topic28"/>
+                                </group>
+                                <group>
+                                    <field name="topic29"/>
+                                </group>
+                                <group>
+                                    <field name="topic30"/>
+                                </group>
+                                <group>
+                                    <field name="topic31"/>
+                                </group>
+                              <group>
+                                    <field name="topic32"/>
+                                </group>
+                              <group>
+                                    <field name="topic33"/>
+                                    <field name="topic34"/>
+                                    <field name="topic35"/>
+                                    <field name="topic36"/>
+                                    <field name="topic37"/>
+                                    <field name="topic38"/>
+                                    <field name="topic39"/>
+                                    <field name="topic40"/>
+                                </group>
+
+
+                            </page>
+                            <page string="نقل الأموال ">
+                                <group string="حدود التغطية المطلوبة :- ">
+                                         <field name="topic41"/>
+                                         <field name="topic42"/>
+                                         <field name="topic43"/>
+
+
+
+                                </group>
+                                <group>
+
+                                    <field name="topic44"/>
+
+
+                                </group>
+                                <group string="نسب توزيع المبلغ السابق :-">
+                                    <field name="topic45"/>
+                                    <field name="topic46"/>
+                                    <field name="topic47"/>
+                                    <field name="topic48"/>
+
+
+
+                                </group>
+                                <group>
+
+                                </group>
+                                <group>
+                                    <field name="topic49"/>
+                                    <field name="topic50"/>
+                                    <field name="topic51"/>
+                                    <field name="topic52"/>
+                                    <field name="topic53"/>
+                                    <field name="topic54"/>
+                                    <field name="topic55"/>
+                                    <field name="topic56"/>
+                                    <field name="topic57"/>
+                                    <field name="topic58"/>
+
+
+                                </group>
+                            </page>
+                            <page string="خاص ب A.T.M ">
+                                <group string="في حالة تعاملكم بتغذية وحدات الصرف الآلي A.T.M نرجوا الإجابة علي التفاصيل آلاتية ">
+                                    <field name="topic59"/>
+                                    <field name="topic60"/>
+                                    <field name="topic61"/>
+                                    <field name="topic62"/>
+                                    <field name="topic63"/>
+                                    <field name="topic64"/>
+                                    <field name="topic65"/>
+                                    <field name="topic66"/>
+
+
+
+                                </group>
+
+
+                            </page>
+
+                            <page string="الاشخاص الطبيعيه ">
+                                <group string="هل المؤمن له ">
+                                    <field name="topic67"/>
+                                    <field name="topic68"/>
+                                    <field name="topic69"/>
+                                    <field name="topic70"/>
+                                    <field name="topic71"/>
+                                    <field name="topic72"/>
+                                    <field name="topic73"/>
+                                </group>
+                                <group string="الاشخاص الاعتباريه  ">
+
+                                    <field name="topic74"/>
+                                    <field name="topic75"/>
+                                    <field name="topic76"/>
+
+                                </group>
+
+
+                            </page>
+
+                                  <page string="إقــــــــــرار ">
+                                <group>
+                                    <field name="topic77"/>
+                                </group>
+
+                            </page>
+
+
+
+                            <page string="Send To" groups="operation.specialist_team_groups">
+                                <group>
+                                <field name="file"/>
+                                <field name="insurance_company_id" widget="many2many_tags" options="{'no_open': False}"/>
+                                <field name="partner_id"/>
+                                </group>
+
+
+
+                            </page>
+
+
+                            <page string="selected company" attrs="{'invisible': [('state','!=','select_offer'),('state','!=','end_mail')]}"  groups="operation.specialist_team_groups" >
+                                <group>
+                                <field name="file"/>
+                                <field name="policy_note"/>
+                                <field name="insurance_company_id" widget="many2many_tags" options="{'no_open': False}"/>
+                                </group>
+
+
+
+                            </page>
+
+
+                        </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+
+                </form>
+
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="cashtransfer_model_list">
+            <field name="name">cashtransfer list</field>
+            <field name="model">cashtransfer.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+         <record id="cash_view_search" model="ir.ui.view">
+        <field name="name">cashtransfer.model</field>
+        <field name="model">cashtransfer.model</field>
+        <field name="arch" type="xml">
+            <search>
+                        <field name="name"/>
+<!--                <separator>-->
+                        <filter name="end_mail" string="end_mail" domain="[('state','=','end_mail')]"/>
+<!--                </separator>-->
+<!--                <separator>-->
+<!--                        <filter name="sales_team" string="sales_team" domain="['|',('state','=','cancel'),('state','=','create')]"/>-->
+<!--                </separator>-->
+
+
+
+            </search>
+
+        </field>
+    </record>
+
+
+
+
+
+
+
+
+
+
+        <!--###################################################################################################-->
+        <!--        line 1-->
+
+        <record id="cashtransfer_model_line_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line.form</field>
+            <field name="model">cashtransfer.model.line</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="name"/>
+                    <field name="job"/>
+                    <field name="years"/>
+                    <field name="experience"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line</field>
+            <field name="model">cashtransfer.model.line</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="name"/>
+                    <field name="job"/>
+                    <field name="years"/>
+                    <field name="experience"/>
+                </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+        <!--###################################################################################################-->
+        <!--        line2-->
+
+        <record id="cashtransfer_model_line2_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line2.form</field>
+            <field name="model">cashtransfer.model.line2</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="day"/>
+                    <field name="limit"/>
+                    <field name="numbers"/>
+                    <field name="average"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line2" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line2</field>
+            <field name="model">cashtransfer.model.line2</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="day"/>
+                    <field name="limit"/>
+                    <field name="numbers"/>
+                    <field name="average"/>
+                </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+      <!--###################################################################################################-->
+        <!--        line3-->
+
+        <record id="cashtransfer_model_line3_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line3.form</field>
+            <field name="model">cashtransfer.model.line3</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="type"/>
+                    <field name="limit"/>
+                    <field name="numbers"/>
+                    <field name="average"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line3" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line3</field>
+            <field name="model">cashtransfer.model.line3</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="type"/>
+                    <field name="limit"/>
+                    <field name="numbers"/>
+                    <field name="average"/>
+                </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+
+      <!--###################################################################################################-->
+        <!--        line4-->
+
+        <record id="cashtransfer_model_line4_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line4.form</field>
+            <field name="model">cashtransfer.model.line4</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="location"/>
+                    <field name="job"/>
+                    <field name="model"/>
+                    <field name="doubel_lock"/>
+                    <field name="close_time"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line4" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line4</field>
+            <field name="model">cashtransfer.model.line4</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="location"/>
+                    <field name="job"/>
+                    <field name="model"/>
+                    <field name="doubel_lock"/>
+                    <field name="close_time"/>
+                </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+
+     <!--###################################################################################################-->
+        <!--        line5-->
+
+        <record id="cashtransfer_model_line5_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line5.form</field>
+            <field name="model">cashtransfer.model.line5</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="code"/>
+                    <field name="control_unit"/>
+                    <field name="degree"/>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line5" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line5</field>
+            <field name="model">cashtransfer.model.line5</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="code"/>
+                    <field name="control_unit"/>
+                    <field name="degree"/>
+              </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+    <!--###################################################################################################-->
+        <!--        line6-->
+
+        <record id="cashtransfer_model_line6_form" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line6.form</field>
+            <field name="model">cashtransfer.model.line6</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="day"/>
+                    <field name="limit"/>
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="cashtransfer_model_line6" model="ir.ui.view">
+            <field name="name">cashtransfer.model.line6</field>
+            <field name="model">cashtransfer.model.line6</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+
+                    <field name="day"/>
+                    <field name="limit"/>
+
+              </tree>
+            </field>
+        </record>
+        <!--########################################################################################-->
+
+
+        <record model="ir.actions.act_window" id="Cash_transfer_insurance_action">
+            <field name="name">cashtransfer model</field>
+            <field name="res_model">cashtransfer.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--        ####################################################################-->
+
+
+        <menuitem name="طلب تامين نقل نقدية" id="Cash_transfer_insurance" parent="operation.operation_menu_1"
+                  action="Cash_transfer_insurance_action" sequence="2"/>
+
+
+    </data>
+</odoo>

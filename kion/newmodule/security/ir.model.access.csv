@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_attendances_task,hr_attendance_attends,hr_attendance.model_hr_attendance,newmodule.employees_acess_group_attends,1,0,0,0
+employee_evalution_idd,employee_evaluation_name,model_employee_evaluation,base.group_user,1,1,1,1
+employee_add_rate_id,employee_evaluation_add_rate,model_add_emlpoyee_rate,base.group_user,1,1,1,1
+

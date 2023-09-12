@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+
+
+        <record model="ir.ui.view" id="choose_model_form_type">
+            <field name="name">choose type form</field>
+            <field name="model">choose.model</field>
+            <field name="arch" type="xml">
+                <form>
+                      <sheet>
+                           <group>
+
+                               <field name="type_of_insurance"/>
+                               <button name="open_form"  data-hotkey="v"
+                                       string="Open Form" class="btn-primary" type="object"/>
+                           </group>
+<!--                      <notebook>-->
+<!--                            <page string="choose insurance type">-->
+<!--                               -->
+<!--                    </page>-->
+<!--                    </notebook>-->
+                    </sheet>
+                         <div class="oe_chatter">
+                                <field name="message_follower_ids"/>
+                                <field name="activity_ids"/>
+                                <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                             </div>
+                </form>
+
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="choose_type_list">
+            <field name="name">choose type list</field>
+            <field name="model">choose.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="type_of_insurance"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="choose_form_action">
+            <field name="name">choose form</field>
+            <field name="res_model">choose.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--        ####################################################################-->
+
+
+<!--        <menuitem name="Choose Forms" id="choose_form" parent="operation.menu_root"-->
+<!--                  action="choose_form_action" sequence="1"/>-->
+
+
+    </data>
+</odoo>

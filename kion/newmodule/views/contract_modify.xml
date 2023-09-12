@@ -1,0 +1,66 @@
+<odoo>
+    <data>
+
+
+        <record id="modify_contract_replace_fields" model="ir.ui.view">
+            <field name="name">contract custom fields</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <header>
+                    <field name="new_state" widget="statusbar" attrs="{'invisible': [('state', '!=', 'close')]}"
+                           options="{'clickable':'1'}"/>
+
+                </header>
+                <xpath expr="//page[@name='information']" position="replace">
+                    <page name="info" string="salary info">
+                        <group>
+                            <field name="wage"/>
+                            <field name="medical_insurancee"/>
+                            <field name="mobile_allowance"/>
+                            <field name="transportation_allowance"/>
+                            <field name="social_allowance"/>
+                            <field name="state_newvalue"  invisible="1" />
+
+                        </group>
+                    </page>
+
+
+                </xpath>
+
+                 <xpath expr="//field[@name='wage']" position="attributes">
+                    <attribute name="string">Basic Salary</attribute>
+                </xpath>
+
+
+            </field>
+
+
+        </record>
+
+    <record id="modify_contract_replace_fields_tree" model="ir.ui.view">
+            <field name="name">contract custom fields tree</field>
+            <field name="model">hr.contract.history</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_history_view_list"/>
+            <field name="arch" type="xml">
+
+                        <xpath expr="//field[@name='date_start']" position="after">
+                            <field name="state_newvalue"/>
+<!--                            <button  name='get_state_value' string="cllickk" type="object"/>-->
+
+
+
+                        </xpath>
+
+
+            </field>
+
+
+        </record>
+
+
+
+
+
+    </data>
+</odoo>

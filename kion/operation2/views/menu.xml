@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <data>
+
+
+        <menuitem id="menu_operation_root"
+                  name="Operation2"
+                  sequence="0"
+        />
+
+        <menuitem id="menu_home_master"
+                  name="Home"
+                  parent="menu_operation_root"
+                  sequence="0"
+
+        />
+
+        <menuitem id="menu_policy_master"
+                  name="Policies"
+                  parent="menu_operation_root"
+                  sequence="0"
+        />
+
+        <menuitem id="menu_claim_master"
+                  name="Claims"
+                  parent="menu_operation_root"
+                  sequence="0"
+        />
+        <menuitem id="menu_add_master"
+                  name="ADD"
+                  parent="menu_operation_root"
+                  sequence="99999"
+        />
+
+    </data>
+
+</odoo>

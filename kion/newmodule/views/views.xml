@@ -1,0 +1,148 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="newmodule.list">
+      <field name="name">newmodule list</field>
+      <field name="model">newmodule.newmodule</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="newmodule.action_window">
+      <field name="name">newmodule window</field>
+      <field name="res_model">newmodule.newmodule</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="newmodule.action_server">
+      <field name="name">newmodule server</field>
+      <field name="model_id" ref="model_newmodule_newmodule"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="newmodule" id="newmodule.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="newmodule.menu_1" parent="newmodule.menu_root"/>
+    <menuitem name="Menu 2" id="newmodule.menu_2" parent="newmodule.menu_root"/>
+-->
+    <!-- actions -->
+<!--&lt;!&ndash;-->
+<!--    <menuitem name="List" id="newmodule.menu_1_list" parent="newmodule.menu_1"-->
+<!--              action="newmodule.action_window"/>-->
+<!--    <menuitem name="Server to list" id="newmodule" parent="newmodule.menu_2"-->
+<!--              action="newmodule.action_server"/>-->
+<!--              -->
+<!--              -->
+<!--              -->
+<!--              -->
+<!--     <record id="inherite_attendences_customfield" model="ir.ui.view">-->
+<!--        <field name="name">show attendes customer</field>-->
+<!--        <field name="model">hr.attendance</field>-->
+<!--        <field name="inherit_id" ref="account.view_move_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--          <xpath expr="//field[@name='partner_id']" position="after">-->
+<!--                  <button name="pppp" type="object" string="ckick"/>-->
+
+
+
+<!--              <field name="customerpposition"/>-->
+<!--          </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+
+<!--    <record model="ir.actions.act_window" id="hr_attendance_action_my_custom">-->
+<!--      <field name="name">show attendes</field>-->
+<!--      <field name="res_model">hr.attendance</field>-->
+<!--      <field name="view_mode">tree</field>-->
+<!--    </record>-->
+
+
+<!--     <record id="inherite_attendances_customfield" model="ir.ui.view">-->
+<!--            <field name="name">attendances model</field>-->
+<!--            <field name="model">nour.model</field>-->
+<!--            <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--            </field>-->
+
+<!--        </record>-->
+
+
+
+
+<!--        <record id="menu_action_custom_tree_model" model="ir.ui.view">-->
+<!--            <field name="name">menu_action_custom_model_tree</field>-->
+<!--            <field name="model">nour.model</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form>-->
+
+<!--                </form>-->
+
+<!--            </field>-->
+<!--        </record>-->
+
+
+
+<!--        <record id="menu_action_custom_model" model="ir.ui.view">-->
+<!--            <field name="name">menu_action_custom_model</field>-->
+<!--            <field name="model">nour.model</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form>-->
+
+<!--                </form>-->
+
+<!--            </field>-->
+<!--        </record>-->
+
+
+
+
+
+
+    <!-- menu categories -->
+
+   <menuitem id="menu_customer_details_main_reports"
+         name="my attendances"
+         sequence="10"
+          groups="newmodule.employees_acess_group_attends"/>
+
+
+    <!-- actions -->
+        <menuitem id="menu_customer_details_report"
+         name="my attendances"
+         parent="menu_customer_details_main_reports"
+         action="hr_attendance.hr_attendance_action"
+         sequence="0"
+        />
+
+
+
+  </data>
+</odoo>

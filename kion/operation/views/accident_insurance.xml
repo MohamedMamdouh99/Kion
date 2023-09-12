@@ -1,0 +1,549 @@
+<odoo>
+
+    <data>
+
+
+
+
+        <record id="accident_insurance_form" model="ir.ui.view">
+            <field name="name">accident.insurance.form</field>
+            <field name="model">accident.insurance</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_confirm" id="action_confirm" data-hotkey="v"
+                                string="Confirm" class="btn-primary" type="object"
+                                attrs="{'invisible': ['|','|','|',('state', '=', 'confirm'),('state', '=', 'send_email'),('state', '=', 'end_mail'),('state', '=', 'select_offer')]}"/>
+                        <button name="send_user_order" data-hotkey="v"
+                                string="send email" class="oe_highlight" type="object"
+                                attrs="{'invisible': [('state','!=','confirm')]}"
+                                groups="operation.specialist_team_groups"/>
+
+                        <button name="select_offer" data-hotkey="v"
+                                string="Select Offer" class="btn-primary" type="object"
+                                attrs="{'invisible': [('state','!=','send_email'),('state','!=','select_offer')]}"
+                                groups="operation.specialist_team_groups"/>
+
+
+                        <button name="end_mail" data-hotkey="v"
+                                string="End Mail" class="btn-primary" type="object"
+                                attrs="{'invisible': [('state','!=','select_offer')]}"
+                                groups="operation.specialist_team_groups"/>
+
+                        <button name="cancel_operation" data-hotkey="v"
+                                string="cancel" class="btn-primary" type="object"
+                                attrs="{'invisible': ['|',('state','=','create'),('state','=','end_mail')]}"
+                        />
+
+                        <button name="toggle_active" string="Cancel Policy" type="object" class="oe_stat_button"
+                                icon="fa-archive" groups="operation.cancel_end_mail_group"
+                                attrs="{'invisible': [('state','!=','end_mail')]}">
+                            <field name="active" widget="boolean_button"/>
+                        </button>
+
+                        <button name="increase" data-hotkey="v"
+                                string="Increase" class="btn-primary" type="object"
+                                confirm="are you sure you want to continue?"
+
+                                attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"
+                        />
+                        <button name="modify" data-hotkey="v"
+                                string="Modify" class="btn-primary" type="object"
+                                confirm="are you sure you want to continue?"
+
+                                attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"
+                        />
+                        <button name="decrease" data-hotkey="v"
+                                string="Decrease" class="btn-primary" type="object"
+                                confirm="are you sure you want to continue?"
+
+                                attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"
+                        />
+
+                        <button name="renew" data-hotkey="v"
+                                string="Renew" class="btn-primary" type="object"
+                                confirm="are you sure you want to continue?"
+
+                                attrs="{'invisible': ['|',('state','!=','send_email'),('state','!=','confirm'),('state','!=','end_mail')]}"
+                        />
+                        <button name="cancel_police" data-hotkey="v"
+                                string="Cancel" class="btn-primary" type="object"
+                                attrs="{'invisible': [('state','!=','end_mail')]}"
+                                groups="operation.cancel_end_mail_group"
+                                confirm="are you sure you want to continue?"
+                        />
+
+
+                        <field name="state" widget="statusbar"/>
+
+
+                    </header>
+                    <sheet>
+                        <widget name="web_ribbon" title="Mail_Ended" bg_color="bg-success"
+                                attrs="{'invisible': [('state','!=','end_mail')]}"/>
+                        <field name="state2" widget="statusbar"
+                               attrs="{'invisible': [('state','!=','end_mail')]}"/>
+
+
+                        <notebook>
+                            <page string="طلب تأمين من الحوادث الشخصية بمبالــــــغ كبيــــرة"
+                                  attrs="{'invisible': ['|',('state','=','select_offer'),('state','=','send_email')]}">
+
+                                <group>
+
+                                    <field name="name" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic1" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+                                </group>
+
+
+                                <group string="بيانــــــــات عــــن المؤمـــن عليــــــــه">
+
+                                    <field name="topic2" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic3" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic4" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic5" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic6" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic7" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic8" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic9" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic10" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic11" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+
+                                </group>
+
+
+                                <group string="بيان بوثائق تأمينات الحياة والحوادث الشخصية السارية الحالية :-">
+
+
+                                    <field name="topic12" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic13" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic14" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic15" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic16" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+
+                                </group>
+
+
+                                <group string="بيان بوثائق تأمينات الحيــاة والحـــوادث الشخصيـــة السابقـة">
+
+
+                                    <field name="topic17" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic18" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic19" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic20" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic21" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic22" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic23" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic26" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic24" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic25" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+
+                                </group>
+                            </page>
+
+
+                            <page string="أسئلة متعلقة بحالته الصحية والتاريخ المرضي"
+                                  attrs="{'invisible': ['|',('state','=','select_offer'),('state','=','send_email')]}">
+
+
+                                <group>
+                                    <group>
+                                        <field name="topic27" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic28" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic29" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic30" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic31" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic32" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic33" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic34" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic35" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic36" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic37" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic38" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic39" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic40" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic41" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic42" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic43" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic44" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic45" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic46" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    </group>
+                                    <group string="في حالـة الإجــــابة بنعــــم أذكــــر:">
+                                        <field name="topic47" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic48" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic49" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic42" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    </group>
+
+
+                                    <group string="مــــدى التعــــــــرض لمخـــــــــــــــاطــــــر خاصــــــــــــة:	">
+                                        <field name="topic50" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic51" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic52" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic53" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic54" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic55" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic56" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic57" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic58" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic59" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+                                    </group>
+
+                                    <group>
+                                        <field name="topic60" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic61" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic62" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic63" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic64" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+                                    </group>
+
+                                    <group string="المستفيدون في حالة الوفــــــــــاة اسم كل مستفيد والصلة والعنوان ">
+                                        <field name="topic65" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic66" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic67" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic69" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <field name="topic70" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+                                    </group>
+
+
+                                </group>
+
+                            </page>
+
+                            <page string="إقــــــــــــــــــــــرار"
+                                  attrs="{'invisible': ['|',('state','=','select_offer'),('state','=','send_email')]}">
+                                <group>
+                                    <field name="topic71" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic72" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic73" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic74" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="topic75" attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                </group>
+                            </page>
+
+
+
+                            <page string="Send To" groups="operation.specialist_team_groups"
+                                  attrs="{'invisible': ['|',('state','=','select_offer'),('state','=','send_email')]}">
+                                <group>
+
+                                    <field name="insurance_company_id" widget="many2many_tags"
+                                           options="{'no_open': False}"
+                                           attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="partner_id"
+                                           attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                    <field name="subject"/>
+                                    <field name="body_template"/>
+                                    <field name="attachment_files_ids" widget="many2many_binary"
+                                           attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+
+                                </group>
+                            </page>
+
+                            <page string="mail template"
+                                  attrs="{'invisible': [('state','!=','select_offer'),('state','!=','end_mail')]}">
+                                <group>
+                                    <label for="relationallll"/>
+                                    <div>
+                                        <field name="relationallll" class="oe_inline"
+                                               attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                        <button name="open_offer" data-hotkey="v" string="open " class="btn-primary"
+                                                type="object"/>
+                                    </div>
+                                </group>
+                                <group>
+                                    <field name="attachment_files_ids" widget="many2many_binary"
+                                           attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                </group>
+                            </page>
+                            <page string="الوثيقة"
+                                  attrs="{'invisible': [('state','!=','select_offer'),('state','!=','end_mail')]}">
+                                <group>
+                                </group>
+
+
+                                <group>
+                                    <button name="open_pdf" string="Open PDF" type="object" class="oe_highlight"/>
+
+                                </group>
+                                <group>
+                                    <field name="worksheet" widget="pdf_viewer"/>
+
+                                </group>
+
+
+                            </page>
+
+
+                            <page string="Claims"
+                                  attrs="{'invisible': [('state','!=','end_mail')]}">
+                                <group>
+                                    <field name="add_claims_notes2"
+                                    />
+                                </group>
+                                <group>
+                                    <field name="multiple_files" filename="file_name"/>
+                                </group>
+
+
+                                <notebook>
+                                    <page string="طلب معاينة قبل الاصلاح">
+                                        <field name="before_fix_claims"
+                                        />
+                                    </page>
+                                    <page string="طلب معاينه بعد الاصلاح
+">
+                                        <field name="after_fix_claims"
+                                        />
+                                    </page>
+                                    <page string="اذن دخول سيارات
+">
+                                        <field name="car_claims"
+                                        />
+                                    </page>
+                                    <page string="طلب وثيقة عميل
+">
+                                        <field name="client_claims"
+                                        />
+                                    </page>
+                                    <page string="اذن خروج">
+                                        <field name="exit_permission_claims"
+                                        />
+                                    </page>
+                                    <page string="نموذج تسوية">
+                                        <field name="equal_claims"
+                                        />
+                                    </page>
+
+
+                                </notebook>
+
+
+                            </page>
+
+                            <page string="Claims_bmw"
+                                  attrs="{'invisible': [('state','!=','end_mail')]}">
+                                <group>
+                                    <field name="add_claims_notes"
+                                    />
+                                </group>
+                                <group>
+                                    <field name="file" filename="file_name"/>
+                                </group>
+
+
+                                <notebook>
+                                    <page string="طلب معاينة قبل الاصلاح">
+                                        <field name="before_fix_claims"
+                                        />
+                                    </page>
+                                    <page string="طلب معاينه بعد الاصلاح
+">
+                                        <field name="after_fix_claims"
+                                        />
+                                    </page>
+                                    <page string="اذن دخول سيارات
+">
+                                        <field name="car_claims"
+                                        />
+                                    </page>
+                                    <page string="طلب وثيقة عميل
+">
+                                        <field name="client_claims"
+                                        />
+                                    </page>
+                                    <page string="اذن خروج">
+                                        <field name="exit_permission_claims"
+                                        />
+                                    </page>
+                                    <page string="نموذج تسوية">
+                                        <field name="equal_claims"
+                                        />
+                                    </page>
+
+
+                                </notebook>
+
+
+                            </page>
+
+
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter" invisible="1">
+<!--                        <field name="message_follower_ids" />-->
+                        <field name="activity_ids" invisible="1"/>
+<!--                        <field name="message_ids" options="{'post_refresh': 'recipients'}" />-->
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="operation_activity_view_form_popup" model="ir.ui.view">
+            <field name="name">mail.activity.view.form.popup</field>
+            <field name="model">mail.activity</field>
+            <field name="priority">20</field>
+            <field name="arch" type="xml">
+                <form string="Log an Activity" create="false">
+                    <sheet string="Activity">
+                        <div class="oe_button_box" name="button_box" invisible="1">
+                            <button name="action_open_document" string="Open Document"
+                                    type="object" class="oe_link" icon="fa-file-text-o"
+                                    attrs="{'invisible': ['|', ('res_model', '=', False), ('res_id', '=', 0)]}"/>
+                        </div>
+                        <group invisible="1">
+                            <field name="activity_category" invisible="1"/>
+                            <field name="res_model" invisible="1"/>
+                            <field name="res_model_id" invisible="1"/>
+                            <field name="res_id" invisible="1"/>
+                            <field name="chaining_type" invisible="1"/>
+                            <field name="previous_activity_type_id"/>
+                            <field name="has_recommended_activities"/>
+                        </group>
+                        <group attrs="{'invisible': [('has_recommended_activities','=',False)]}">
+                            <field name="recommended_activity_type_id" widget="selection_badge"
+                                   domain="[('previous_type_ids', '=', previous_activity_type_id)]"
+                                   string="Recommended Activities"/>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="activity_type_id" required="1"
+                                       options="{'no_create': False, 'no_open': True}" invisible="1"/>
+                                <field name="summary" string="Subject" placeholder="e.g. Discuss proposal"/>
+                                <field name="activity_body" string="Body"/>
+                            </group>
+                            <group>
+                                <!--                            <field name="date_deadline" readonly="0" />-->
+                                <field name="date_deadlinee" readonly="1"/>
+                                <field name="assigned_user_ids" widget="many2many_tags"
+                                       options="{'no_create': True}"/>
+                                <field name="cc_user_ids" widget="many2many_tags"
+                                       options="{'no_create': True}"/>
+
+                                           attrs="{'readonly': [('state', '=', 'end_mail')]}"/>
+                                <!--                            <field name="user_id"/>-->
+                                <!--                            <field name="res_model_id"/>-->
+                                <!--                            <field name="res_id"/>-->
+                                <field name="attachment_files" widget="many2many_binary"/>
+                            </group>
+                        </group>
+<!--                        <field name="note" class="oe-bordered-editor" placeholder="Log a note..."/>-->
+                        <footer>
+                            <field name="id" invisible="1"/>
+                            <button id="mail_activity_schedule" string="Send" name="action_close_dialog" type="object"
+                                    class="btn-primary"
+                                    attrs="{'invisible': [('id', '!=', False)]}" data-hotkey="q"/>
+                            <!--                        <button id="mail_activity_save" string="Save" name="action_close_dialog" type="object" class="btn-primary"-->
+                            <!--                            attrs="{'invisible': [('id', '=', False)]}" data-hotkey="q"/>-->
+                            <!--                        <button attrs="{'invisible': [('chaining_type', '=', 'trigger')]}" string="Mark as Done" name="action_done"-->
+                            <!--                            type="object" class="btn-secondary" data-hotkey="w"-->
+                            <!--                            context="{'mail_activity_quick_update': True}"/>-->
+                            <!--                        <button attrs="{'invisible': [('chaining_type', '=', 'trigger')]}" string="Done &amp; Schedule Next" name="action_done_schedule_next"-->
+                            <!--                            type="object" class="btn-secondary" data-hotkey="x"-->
+                            <!--                            context="{'mail_activity_quick_update': True}"/>-->
+                            <!--                        <button attrs="{'invisible': [('chaining_type', '=', 'suggest')]}" string="Done &amp; Launch Next" name="action_done_schedule_next"-->
+                            <!--                            type="object" class="btn-secondary" data-hotkey="x"-->
+                            <!--                            context="{'mail_activity_quick_update': True}"/>-->
+                            <button string="Discard" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                            <button name="send_user_email" string="Send in mail"
+                                    type="object" class="btn-primary"
+                                    />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="my_action_mail_activity_popup" model="ir.actions.act_window">
+            <field name="name">Mail Activity Popup</field>
+            <field name="type">ir.actions.act_window</field>
+<!--            <field name="view_ids" eval="[(5, 0, 0),-->
+<!--            (0, 0, {'view_mode': 'tree'}),-->
+<!--            (0, 0, {'view_mode': 'form', 'view_id': ref('operation.action_mail_activity_popup')})]"/>-->
+            <!--            <field name="view_type">form</field>-->
+            <field name="view_mode">form</field>
+            <field name="res_model">mail.activity</field>
+            <field name="view_id" ref="operation.operation_activity_view_form_popup"/>
+            <field name="target">new</field>
+<!--            <field name="context">{'form_view_initial_mode': 'edit','default_res_model_id':active_model,'default_res_id':active_id,'default_date_deadline':current_date}</field>-->
+        </record>
+
+
+        <record id="accident_insurance_tree" model="ir.ui.view">
+            <field name="name">accident.insurance.tree</field>
+            <field name="model">accident.insurance</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="topic1"/>
+                    <field name="topic2"/>
+                    <field name="topic17"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="accident_insurance_view_search" model="ir.ui.view">
+            <field name="name">accident_insurance.search</field>
+            <field name="model">accident.insurance</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="topic1"/>
+                    <field name="topic2"/>
+                    <field name="topic17"/>
+                    <!--                <separator>-->
+                    <filter name="ennd_mail" string="end_mail" domain="[('state','=','end_mail')]"/>
+                    <filter name="normal_process" string="Normal_Process" domain="[('state','!=','end_mail')]"/>
+                    <!--                </separator>-->
+                    <!--                <separator>-->
+                    <!--                        <filter name="sales_team" string="sales_team" domain="['|',('state','=','cancel'),('state','=','create')]"/>-->
+                    <!--                </separator>-->
+
+
+                </search>
+
+            </field>
+        </record>
+
+
+        <!--########################################################################################-->
+
+
+        <record model="ir.actions.act_window" id="accident_insurance_model_action">
+            <field name="name">طلب تأمين من الحوادث الشخصية</field>
+            <field name="res_model">accident.insurance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_normal_process': 1}</field>
+
+
+        </record>
+
+
+        <!--        ####################################################################-->
+
+
+        <menuitem name="طلب تأمين من الحوادث الشخصية" id="accident_insurance_model_menu"
+                  parent="operation.operation_menu_1"
+                  action="accident_insurance_model_action" sequence="5"/>
+
+
+
+
+    </data>
+
+
+</odoo>
+

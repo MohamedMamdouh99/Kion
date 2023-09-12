@@ -1,0 +1,89 @@
+<odoo>
+    <data>
+
+
+        <record id="ihherit_employee_custom_fields" model="ir.ui.view">
+            <field name="name">employee custom fields</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//page[@name='hr_settings']" position="after">
+
+
+                    <page string="other information">
+
+                        <group>
+                            <group string='personal_info' name="active_group">
+
+                                <field name="filecode"/>
+                                <field name="employee_rate"/>
+                                <field name="bloodgroup" position="after"/>
+                                <field name="religion"/>
+                                <field name="upload_id"/>
+                                <field name="id_expiry_date"/>
+                                <field name="id_issue_date"/>
+                                <field name="passport_expiry_date"/>
+                                <field name="upload_passport"/>
+                            </group>
+                            <group string="Military_info" name="identification_group">
+                                <field name="military_status"/>
+                                <field name="military_date"/>
+                                <field name="military_certification_class"/>
+                                <field name="military_certification_code"/>
+                                <field name="upload_military_certification"/>
+                            </group>
+                            <group string='work_info' name="payroll_group">
+                                <field name="total_experience_in_years"/>-->
+                                <field name="upload_bachelor_certification"/>
+                                <field name="upload_criminal_newspaper"/>
+                                <field name="upload_work_permit"/>
+                                <field name="upload_social_insurance_print"/>
+                            </group>
+                        </group>
+
+                        <!--                                    <sheet>-->
+
+                        <!--                                    <group name="personal" string="personal_info">-->
+
+                        <!--                                        <field name="filecode"/>-->
+                        <!--                                        <field name="bloodgroup" position="after"/>-->
+                        <!--                                        <field name="religion"/>-->
+                        <!--                                        <field name="upload_id"/>-->
+                        <!--                                        <field name="id_expiry_date"/>-->
+                        <!--                                        <field name="id_issue_date"/>-->
+                        <!--                                        <field name="passport_expiry_date"/>-->
+                        <!--                                        <field name="upload_passport"/>-->
+                        <!--                                          </group>-->
+                        <!--                                        <group name="military_info" string="military_info">-->
+                        <!--                                            <field name="military_status"/>-->
+                        <!--                                            <field name="military_date"/>-->
+                        <!--                                            <field name="military_certification_class"/>-->
+                        <!--                                            <field name="military_certification_code"/>-->
+                        <!--                                            <field name="upload_military_certification"/>-->
+                        <!--                                        </group>-->
+                        <!--                                        <group name="info2" string="work info">-->
+                        <!--                                        <field name="total_experience_in_years"/>-->
+                        <!--                                        <field name="upload_bachelor_certification"/>-->
+                        <!--                                        <field name="upload_criminal_newspaper"/>-->
+                        <!--                                        <field name="upload_work_permit"/>-->
+                        <!--                                        <field name="upload_social_insurance_print"/>-->
+                        <!--                                        </group>-->
+
+
+                        <!--                                    </sheet>-->
+                    </page>
+
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="after">
+                    <field name="cost_center"/>
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

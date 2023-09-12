@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+    <record id="action_report_land_transport" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">land.transfer.model</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.report_land_transport</field>
+            <field name="report_file">operation.report_land_transport</field>
+            <field name="binding_model_id" ref="model_land_transfer_model"/>
+            <field name="binding_type">report</field>
+    </record>
+
+
+      <template id="operation.report_land_transport">
+        <t t-call="web.html_container">
+
+
+          <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>طلب تأمين نقل بري</h2>
+                            <p>	إسم المؤمن له: <span t-field="o.name"/></p>
+                            <p>نوع البضاعة: <span t-field="o.topic1"/></p>
+                            <p>مبلغ التأمين: <span t-field="o.topic2"/></p>
+                            <p>الحد الأقصى للشحنة:<span t-field="o.topic3"/></p>
+                            <p>الأخطار المؤمن عليها: أخطار طريق فقط و (اخطار اضافية أخرى)   :<span t-field="o.topic4"/></p>
+                            <p> الرحلة من  :<span t-field="o.topic5"/></p>
+                            <p> الي:<span t-field="o.topic6"/></p>
+                            <p>وسيلة النقل : مؤجرة / ملك المؤمن له :<span t-field="o.topic7"/></p>
+                            <p>تاريخ الشحن<span t-field="o.topic8"/></p>
+                            <p>رقـم السيارة:<span t-field="o.topic9"/></p>
+                            <p>اسم السائق : بطاقة شخصية عائلية  :<span t-field="o.topic10"/></p>
+                            <p> ملاحظـات<span t-field="o.topic11"/></p>
+                            <p>يبدأ سريان هذا التأمين بمجرد قبول الشركة لهذا الطلب وبعد قيامكم بسداد القسط المطلوب.</p>
+                            <p> التاريخ :<span t-field="o.topic12"/></p>
+                            <p> توقيع طالب التأمين:<span t-field="o.topic13"/></p>
+
+
+
+
+                              <h2>INLAND CARGO PROPOSAL FORM</h2>
+                            <p>Insured:<span t-field="o.topic14"/></p>
+                            <p> Shipment:<span t-field="o.topic15"/></p>
+                            <p> Sum insured:<span t-field="o.topic16"/></p>
+                            <p> Max. Value per one shipment:<span t-field="o.topic17"/></p>
+                            <p> Voyage from: <span t-field="o.topic18"/></p>
+                            <p> Voyage to:<span t-field="o.topic19"/></p>
+                            <p>Means of transport:</p>
+
+                            <p> Rent trucks  :<span t-field="o.topic75"/></p>
+                            <p> Rent owned:<span t-field="o.topic76"/></p>
+                            <p> Plate No:<span t-field="o.topic109"/></p>
+                            <p> Driver Name:<span t-field="o.topic111"/></p>
+                            <p> ID No:<span t-field="o.topic112"/></p>
+                            <p> Risks insured:    Road Risk   (and additional Risks):<span t-field="o.topic113"/></p>
+                            <p> Notes:<span t-field="o.topic114"/></p>
+                            <p> Date:<span t-field="o.topic115"/></p>
+                            <p> Insureds Signature:<span t-field="o.topic116"/></p>
+
+
+
+<!--                            <p> Rent trucks :<span t-field="o.topic21"/></p>-->
+<!--&lt;!&ndash;                            <p>Rent owned: <span t-field="o.topic22"/></p>&ndash;&gt;-->
+<!--                            <p> Plate No:<span t-field="o.topic23"/></p>-->
+<!--                            <p> Driver Name:<span t-field="o.topic24"/></p>-->
+<!--                            <p> ID No:<span t-field="o.topic25"/></p>-->
+<!--                            <p> Risks insured:    Road Risk   (and additional Risks):<span t-field="o.topic26"/></p>-->
+<!--                            <p>Notes:<span t-field="o.topic27"/></p>-->
+<!--                            <p> Date:<span t-field="o.topic28"/></p>-->
+<!--                            <p> Insureds Signature:<span t-field="o.topic29"/></p>-->
+
+
+
+
+                        </div>
+                    </t>
+                </t>
+        </t>
+      </template>
+
+
+
+
+</odoo>

@@ -1,0 +1,79 @@
+<odoo>
+
+    <data>
+
+<!--        طلب تامين نقدية-->
+
+            <record model="ir.actions.act_window" id="policy_menu_action_air_sea">
+                    <field name="name">Policy</field>
+                    <field name="res_model">sea.air.transport</field>
+                    <field name="context">{'search_default_ennd_mail': 1,'edit': 0,'create': 0}</field>
+                    <field name="view_mode">tree,form</field>
+              </record>
+
+
+
+
+
+<!--&lt;!&ndash;-طلب تامين مسؤوليه مدنيه->-->
+
+            <record model="ir.actions.act_window" id="policy_menu_action">
+                    <field name="name">Policy</field>
+                    <field name="res_model">operation.operation</field>
+                    <field name="context">{'search_default_end_mail': 1,'edit': 0,'create': 0}</field>
+
+                    <field name="view_mode">tree,form</field>
+              </record>
+
+
+
+            <record model="ir.actions.act_window" id="policy_menu_action_cash">
+                    <field name="name">Policy</field>
+                    <field name="res_model">cashtransfer.model</field>
+                    <field name="context">{'search_default_end_mail': 1,'edit': 0,'create': 0}</field>
+                    <field name="view_mode">tree,form</field>
+              </record>
+
+
+
+<!--طلب تأمين من الحوادث الشخصية-->
+
+     <record model="ir.actions.act_window" id="policy_menu_action_accident_insurance">
+                    <field name="name">Policy</field>
+                    <field name="res_model">accident.insurance</field>
+                    <field name="context">{'search_default_ennd_mail': 1,'create': 0}</field>
+                    <field name="view_mode">tree,form</field>
+              </record>
+<!--allllllllllllllllllllllllllllllllllllllllllllllll-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--############################################################################################################################-->
+
+                <menuitem name="Policy " id="policy_menu" parent="operation.menu_root"/>
+
+                <menuitem name="طلبات تامين مسؤولية مدنيه" id="policy_menu_operation" parent="policy_menu" action="policy_menu_action"/>
+
+                <menuitem name="طلبات تامين نقديه" id="policy_menu_cash" parent="policy_menu" action="policy_menu_action_cash"/>
+
+
+                <menuitem name="طلب تأمين نقل بحرى / جوى" id="policy_menu_air_sea_transport" parent="policy_menu" action="policy_menu_action_air_sea"/>
+
+
+                <menuitem name="طلب تأمين من الحوادث الشخصية" id="policy_menu_accident_insurance" parent="policy_menu" action="policy_menu_action_accident_insurance"/>
+
+
+
+    </data>
+</odoo>
+
+

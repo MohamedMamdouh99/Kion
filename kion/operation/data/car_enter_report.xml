@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+
+        <record id="action_report_car_model" model="ir.actions.report">
+            <field name="name">create report</field>
+            <field name="model">car.model</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">operation.report_car_model</field>
+            <field name="report_file">operation.report_car_model</field>
+            <field name="binding_model_id" ref="model_after_fix"/>
+            <field name="binding_type">report</field>
+        </record>
+
+          <template id="report_car_model">
+            <t t-call="web.html_container">
+              <t t-foreach="docs" t-as="o">
+                  <t t-call="web.external_layout">
+                      <div class="page">
+
+                             <h1 style="text-align: center;">اذن دخول سيارة</h1>
+                          <p>	السادة :مهندسي مركز خدمة : <span t-field="o.name"/></p>
+                          <h6 style="text-align: center;">تحية طيبة وبعد,,,</h6>
+                          <p>	يرجي من سيادتكم ادخال السيارة التالي بياناتها...</p>
+
+
+
+
+
+                            <table class="table table-sm table-border table-striped" style="width:100%;border-collapse: collapse;border: 1px solid gray;direction: ltr;">
+
+                                            <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> اسم المالك :<span t-field="o.topic1"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم وثيقة التامين :<span t-field="o.topic2"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> نوع السيارة :<span t-field="o.topic3"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> موديل السياره :<span t-field="o.topic4"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> سنة الصنع :<span t-field="o.topic5"/></td>
+
+                                            </tr>
+                                             <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم الشاسية :<span t-field="o.topic6"/></td>
+
+                                            </tr>
+                                            <tr>
+                                              <td style="border-left: 1px solid gray;text-align:left;"> رقم اللوحة :<span t-field="o.topic7"/></td>
+
+                                            </tr>
+
+
+
+
+
+
+
+
+
+
+
+                                 </table>
+
+
+
+
+
+                      </div>
+
+                </t>
+                </t>
+
+            </t>
+        </template>
+    </data>
+
+
+</odoo>

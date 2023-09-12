@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="prospect_view_form" model="ir.ui.view">
+            <field name="name">prospect_view_form</field>
+            <field name="model">prospect</field>
+            <field name="arch" type="xml">
+                <form string="prospect_form">
+                    <sheet>
+                        <notebook>
+                            <page name="step1" string="Step 1">
+                                <group string="client information">
+                                    <group>
+                                        <field name="client"/>
+                                        <field name="address"/>
+                                    </group>
+                                    <group>
+                                        <field name="phone_number"/>
+                                        <field name="email"/>
+                                    </group>
+                                </group>
+                                <group string="contact information">
+                                    <group>
+                                        <field name="contact_person_name"/>
+                                        <field name="designation"/>
+                                    </group>
+                                    <group>
+                                        <field name="contact_person_phone"/>
+                                        <field name="contact_person_email"/>
+                                    </group>
+                                </group>
+                                <field name="attachments" widget="many2many_binary" options="{'no_create': True}"
+                                       string="Attachments"/>
+                            </page>
+                            <page name="step2" string="Step 2">
+                                <group>
+                                    <group>
+                                        <field name="business_owner"/>
+                                        <field name="client" string="Insured Name" readonly="True"/>
+                                        <field name="email" string="Insured Email"/>
+                                        <field name="type_of_business"/>
+                                        <field name="tentative_start_date"/>
+                                        <field name="remarks"/>
+                                        <field name="previous_policy_number" string="Previous Policy Number"
+                                               attrs="{'invisible': [('type_of_business', 'not in', ('rollover', 'renew'))]}"/>
+                                        <field name="previous_insurer" string="Previous Insurer"
+                                               attrs="{'invisible': [('type_of_business', 'not in', ('rollover', 'renew'))]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="percentage"/>
+                                        <field name="address"/>
+                                        <field name="phone_number"/>
+                                        <field name="policy_name"/>
+                                        <field name="first_followup_date"/>
+                                        <field name="previous_insurer_branch" string="Previous Insurer Branch"
+                                               attrs="{'invisible': [('type_of_business', 'not in', ('rollover', 'renew'))]}"/>
+
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_prospect" model="ir.actions.act_window">
+            <field name="name">Prospect</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">prospect</field>
+            <field name="view_mode">form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    create your first client.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_prospect"
+                  name="Prospect"
+                  parent="menu_add_master"
+                  action="action_prospect"
+                  sequence="0"/>
+    </data>
+</odoo>

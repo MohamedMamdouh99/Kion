@@ -1,0 +1,10 @@
+<!--<odoo>-->
+<!--    <data>-->
+<!--        <record model="ir.actions.act_url" id="action_show_pdf">-->
+<!--            <field name="name">Show PDF</field>-->
+<!--            <field name="type">ir.actions.act_url</field>-->
+<!--            <field name="url">/operation/show_pdf?file_name=my_pdf_file.pdf</field>-->
+<!--            <field name="target">new</field>-->
+<!--        </record>-->
+<!--    </data>-->
+<!--</odoo>-->
